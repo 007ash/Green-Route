@@ -1,0 +1,1001 @@
+trip_id,origin,destination,distance_km,vehicle_type,avg_speed_kmph,traffic_level,weather,temperature_c,co2_emission_g_km
+1,City Center,Park,19.06,Diesel Car,33.4,Medium,Rainy,35.1,264
+2,City Center,University,11.7,Petrol Car,25.6,Low,Rainy,20.3,217.8
+3,Airport,Train Station,7.07,Bus,36.7,High,Rainy,2.2,357.5
+4,Industrial Zone,Downtown,8.39,Diesel Car,77.4,Medium,Clear,-0.6,220
+5,Suburb B,University,8.08,Petrol Car,63.8,Medium,Snowy,12,234
+6,Airport,Downtown,21.08,Bus,73.1,Medium,Clear,-1.9,275
+7,Suburb A,Downtown,24.66,Diesel Car,72,Medium,Clear,32.5,220
+8,Suburb A,Downtown,10.17,Electric Vehicle,62.1,Medium,Clear,23.6,22
+9,Airport,Mall,5.76,Motorbike,36.2,High,Rainy,4.9,143
+10,Suburb B,Park,7.27,Petrol Car,68.3,Medium,Clear,36.1,198
+11,Airport,Downtown,6.89,Motorbike,43.7,High,Clear,6.9,120
+12,Suburb A,University,14.4,Bus,45.7,Medium,Clear,39.9,275
+13,Suburb A,University,13.35,Petrol Car,71.7,Low,Clear,25.6,180
+14,Airport,Park,10.85,Bus,79.8,Medium,Snowy,33.7,325
+15,City Center,Park,17.68,Bus,65.1,Medium,Clear,8.2,275
+16,Suburb A,Train Station,2.07,Electric Vehicle,78.3,Medium,Clear,-0.2,22
+17,Suburb B,University,16.01,Diesel Car,42.4,Low,Snowy,36.5,240
+18,City Center,University,9.46,Petrol Car,26.7,Medium,Snowy,31.3,257.4
+19,Suburb A,Park,7.54,Bus,76.8,Low,Clear,-1.9,250
+20,Airport,Mall,4.95,Motorbike,76.8,Low,Clear,22.3,100
+21,Suburb A,University,19.37,Diesel Car,62.8,Medium,Rainy,11.8,240
+22,Airport,Train Station,4.78,Diesel Car,23.8,Low,Clear,21.5,220
+23,City Center,Park,18.28,Petrol Car,33.7,High,Rainy,-1.8,257.4
+24,Suburb A,Downtown,17.39,Diesel Car,52.4,Medium,Rainy,20.9,240
+25,Suburb A,Train Station,20.57,Diesel Car,25.7,Medium,Clear,13.5,242
+26,City Center,Park,3.39,Electric Vehicle,68,Low,Clear,19.1,20
+27,Suburb A,Train Station,6.22,Motorbike,35,High,Clear,33.8,132
+28,Airport,Park,3.16,Bus,70.2,High,Snowy,33.2,350
+29,Suburb A,Train Station,13.17,Diesel Car,71.9,High,Clear,-4.9,240
+30,Industrial Zone,Downtown,23.31,Motorbike,37.1,Medium,Rainy,30.3,132
+31,Industrial Zone,Mall,6.37,Diesel Car,78.1,Medium,Clear,28.7,220
+32,City Center,Park,15.44,Bus,75.2,Medium,Clear,17.9,275
+33,Suburb A,Park,15.69,Diesel Car,44.2,High,Clear,21.1,240
+34,City Center,University,3.89,Bus,53.9,Medium,Clear,25.1,275
+35,Suburb B,Mall,8.11,Diesel Car,60.3,Low,Clear,28.8,200
+36,City Center,Park,12.54,Bus,79.8,Low,Clear,6.9,250
+37,Suburb B,Park,22.22,Electric Vehicle,37.1,Medium,Clear,8.6,24.2
+38,Airport,Park,17.36,Bus,38,Medium,Snowy,1,357.5
+39,City Center,Park,19.08,Diesel Car,36.3,Medium,Rainy,4.2,264
+40,Suburb B,University,13.24,Petrol Car,25.5,Medium,Clear,-4.8,217.8
+41,Suburb A,Downtown,5.72,Motorbike,53.1,Medium,Clear,-1.6,110
+42,Suburb A,University,2.83,Electric Vehicle,55,Low,Clear,8.9,20
+43,City Center,Downtown,6.83,Diesel Car,60,Medium,Clear,34.4,220
+44,Airport,Mall,23.29,Diesel Car,71.9,High,Rainy,34.7,260
+45,City Center,Mall,18.94,Electric Vehicle,66.9,Medium,Rainy,28.1,24
+46,Suburb A,Downtown,5.66,Petrol Car,43,Low,Clear,4,180
+47,Industrial Zone,Downtown,9.02,Diesel Car,33.4,Medium,Clear,7.5,242
+48,City Center,Downtown,10.08,Bus,44,High,Clear,37.3,300
+49,City Center,Downtown,6.11,Electric Vehicle,22.3,Medium,Clear,30.4,24.2
+50,Industrial Zone,University,24.64,Petrol Car,43.1,Medium,Clear,26.9,198
+51,City Center,University,23.29,Bus,61.2,High,Rainy,3.9,325
+52,Industrial Zone,Park,23.82,Electric Vehicle,57.4,Medium,Clear,35.5,22
+53,Airport,Downtown,17.34,Electric Vehicle,44.1,Low,Clear,13.9,20
+54,Industrial Zone,Mall,16.16,Electric Vehicle,44.4,High,Clear,4.5,24
+55,Airport,University,17.06,Motorbike,46.5,Medium,Clear,30.7,110
+56,Suburb A,Park,8.53,Bus,40.1,High,Rainy,25.3,325
+57,Suburb A,Mall,5.39,Petrol Car,34.7,Medium,Rainy,-1.7,237.6
+58,Industrial Zone,University,6.47,Motorbike,49.7,Low,Rainy,-4.8,110
+59,City Center,Train Station,7.03,Bus,47.9,Medium,Snowy,0.5,325
+60,Suburb A,Train Station,17.35,Bus,55.7,High,Rainy,22.6,325
+61,Airport,Train Station,21.1,Bus,46.8,Low,Rainy,15.3,275
+62,Suburb A,Downtown,19.61,Bus,49.1,Low,Clear,27.1,250
+63,Suburb A,Downtown,9.72,Bus,24.8,Low,Clear,1.9,275
+64,Suburb A,Park,11.54,Electric Vehicle,52.6,Medium,Clear,13.9,22
+65,Airport,Park,21.7,Bus,42.8,Low,Clear,28.9,250
+66,Industrial Zone,University,19.19,Bus,68,High,Clear,7.3,300
+67,Industrial Zone,Park,10.94,Motorbike,63.5,High,Snowy,39.1,140
+68,Airport,Park,22.86,Bus,53.9,Low,Rainy,1.1,275
+69,Industrial Zone,Mall,3.16,Motorbike,39.6,Medium,Clear,34.6,121
+70,Suburb B,Train Station,7.8,Petrol Car,48.2,Medium,Clear,37.8,198
+71,Suburb A,Park,19.97,Petrol Car,65.3,High,Clear,-4.1,216
+72,Suburb A,Mall,4.9,Petrol Car,53.8,Low,Rainy,29.5,198
+73,Suburb A,University,15.97,Petrol Car,66.7,Low,Clear,21,180
+74,Suburb B,University,17.58,Motorbike,43.8,Medium,Clear,26.1,110
+75,Suburb A,Park,18.04,Electric Vehicle,71,Medium,Clear,39.3,22
+76,City Center,Downtown,14.25,Electric Vehicle,24.1,Medium,Clear,13.9,24.2
+77,Industrial Zone,Park,11.97,Electric Vehicle,58.1,High,Rainy,14.6,26
+78,Airport,Downtown,16.17,Bus,66.5,Medium,Rainy,21.7,300
+79,Suburb B,Mall,21.11,Petrol Car,36.7,Medium,Rainy,20.6,237.6
+80,Industrial Zone,Downtown,2.66,Electric Vehicle,30.9,Low,Rainy,10.3,24.2
+81,Airport,Downtown,14.78,Bus,76.9,Low,Rainy,17,275
+82,Suburb A,Train Station,16.86,Motorbike,46.9,Low,Clear,13.2,100
+83,Suburb A,Downtown,17.27,Electric Vehicle,48.4,Medium,Clear,28.6,22
+84,Suburb B,Downtown,18.17,Electric Vehicle,38.4,Low,Rainy,9.2,24.2
+85,Airport,Mall,6.41,Motorbike,36.6,Medium,Rainy,21.9,132
+86,City Center,Mall,8.81,Electric Vehicle,30.8,Low,Clear,7.3,22
+87,City Center,University,8.72,Diesel Car,58.3,Medium,Clear,-4.4,220
+88,Suburb B,Train Station,13.01,Electric Vehicle,31.1,Low,Snowy,16.5,26.4
+89,City Center,Train Station,13.31,Bus,57.8,Low,Clear,20.3,250
+90,Suburb B,Park,24.86,Petrol Car,53.5,Medium,Clear,22.8,198
+91,Airport,Train Station,12.36,Motorbike,37.8,Medium,Clear,20.6,121
+92,City Center,University,24.08,Petrol Car,76.9,Low,Clear,24.7,180
+93,Suburb A,Mall,6,Petrol Car,29.4,Medium,Rainy,16.1,237.6
+94,City Center,Mall,8.63,Electric Vehicle,62.2,Medium,Rainy,36.6,24
+95,Airport,Mall,11.78,Bus,33.5,Low,Clear,1.4,275
+96,City Center,Mall,20.23,Bus,64.9,Medium,Clear,0.6,275
+97,Suburb B,Train Station,23.68,Bus,52.4,Medium,Clear,35,275
+98,Suburb B,University,7.76,Petrol Car,33.7,Medium,Rainy,21.4,237.6
+99,City Center,Downtown,15.25,Diesel Car,48.2,Medium,Snowy,3.2,260
+100,Airport,Train Station,16.6,Motorbike,78.1,Medium,Clear,9.4,110
+101,City Center,Mall,9.59,Motorbike,37.3,High,Rainy,19.8,143
+102,Industrial Zone,Park,9.23,Electric Vehicle,27,Medium,Rainy,32.1,26.4
+103,City Center,University,12.63,Petrol Car,31.3,Medium,Rainy,23.1,237.6
+104,City Center,Mall,8.14,Diesel Car,75.7,Medium,Rainy,0.5,240
+105,Airport,Mall,18.33,Electric Vehicle,53.1,Medium,Clear,39.7,22
+106,City Center,Train Station,23.78,Diesel Car,49.9,Medium,Clear,7.3,220
+107,Industrial Zone,Train Station,7.61,Bus,28.7,Low,Clear,28.6,275
+108,Suburb A,Park,8.35,Motorbike,40.4,Medium,Clear,-4.9,110
+109,Suburb B,University,15.34,Motorbike,71.9,Medium,Clear,10,110
+110,Airport,Train Station,12.47,Electric Vehicle,72.2,High,Clear,12.2,24
+111,Industrial Zone,Park,9.32,Motorbike,62.3,High,Clear,24.9,120
+112,Suburb A,Train Station,24.19,Diesel Car,50.1,Medium,Rainy,34.3,240
+113,Industrial Zone,Park,14.1,Motorbike,20.9,Low,Rainy,38.6,121
+114,City Center,Train Station,19.98,Electric Vehicle,40.3,Medium,Rainy,33.3,24
+115,Airport,Train Station,23.95,Motorbike,72.3,Low,Clear,23.4,100
+116,Suburb B,Mall,19.18,Motorbike,78.7,Medium,Rainy,-0.5,120
+117,Suburb A,Downtown,22.78,Petrol Car,39.5,Low,Clear,14.4,198
+118,Suburb A,University,11.48,Diesel Car,30.2,Low,Rainy,22.9,242
+119,Suburb A,Train Station,23,Diesel Car,33.9,Medium,Clear,25,242
+120,Industrial Zone,Downtown,17.59,Diesel Car,24.4,High,Snowy,8.5,308
+121,Industrial Zone,Downtown,12.51,Electric Vehicle,32,Medium,Clear,5.7,24.2
+122,Airport,Downtown,15.22,Electric Vehicle,21.3,High,Clear,-4.6,26.4
+123,City Center,University,19.14,Electric Vehicle,66.5,Low,Rainy,4.9,22
+124,Suburb A,University,7.76,Diesel Car,57.7,High,Rainy,8.9,260
+125,Industrial Zone,Park,15.33,Diesel Car,25.4,Low,Rainy,2.9,242
+126,Suburb A,University,22.16,Electric Vehicle,51.9,High,Rainy,6.6,26
+127,Industrial Zone,Downtown,19.17,Electric Vehicle,68.3,Medium,Clear,28.9,22
+128,Suburb A,Train Station,24.25,Bus,41.9,Medium,Clear,19.1,275
+129,Industrial Zone,Downtown,17.48,Electric Vehicle,55.1,High,Snowy,-0.1,28
+130,Suburb A,Train Station,2.58,Bus,39.7,Medium,Rainy,23.6,330
+131,Industrial Zone,Downtown,16.93,Petrol Car,28.4,High,Clear,17.2,237.6
+132,City Center,Mall,22.41,Diesel Car,43.3,Medium,Snowy,26.3,260
+133,Airport,Train Station,15.51,Diesel Car,73.1,Medium,Rainy,22.7,240
+134,Suburb B,Park,17.88,Diesel Car,46.6,High,Rainy,-0.5,260
+135,Suburb B,University,22.74,Electric Vehicle,23.6,Low,Snowy,37.7,26.4
+136,Industrial Zone,Park,17.24,Bus,78.3,Low,Clear,39.5,250
+137,Airport,Mall,3.58,Bus,32.4,Low,Rainy,9.8,302.5
+138,Suburb A,University,2.07,Diesel Car,79.3,Medium,Rainy,-0.1,240
+139,City Center,Mall,2.34,Diesel Car,55.3,Low,Clear,0.7,200
+140,Industrial Zone,University,4.61,Petrol Car,48.6,Medium,Clear,-0.1,198
+141,Airport,Mall,23.74,Petrol Car,63.6,High,Rainy,8.6,234
+142,City Center,Park,24.97,Motorbike,45.6,Low,Rainy,15,110
+143,City Center,Downtown,15.99,Petrol Car,27.6,Medium,Clear,27,217.8
+144,Industrial Zone,University,14.2,Motorbike,50.3,Medium,Rainy,0.1,120
+145,Airport,Mall,11.89,Diesel Car,44.8,High,Clear,27.8,240
+146,Suburb B,Train Station,9.19,Electric Vehicle,42.5,Low,Snowy,-2,24
+147,City Center,Park,11.93,Electric Vehicle,68.7,Medium,Clear,20.3,22
+148,Suburb B,Park,11.45,Motorbike,72.1,Medium,Snowy,22,130
+149,Suburb B,Park,15.29,Diesel Car,29.3,Medium,Rainy,10.8,264
+150,Airport,Downtown,4.64,Electric Vehicle,54.4,High,Rainy,38.9,26
+151,Airport,University,17.52,Bus,21.6,High,Rainy,7,357.5
+152,Suburb A,Downtown,18.16,Electric Vehicle,75.3,Medium,Clear,1.4,22
+153,Industrial Zone,Park,5.26,Petrol Car,25.5,Medium,Clear,15.4,217.8
+154,Suburb A,Downtown,9.17,Electric Vehicle,66.6,Medium,Clear,-2.6,22
+155,Suburb A,University,3.14,Petrol Car,36.3,Medium,Clear,14.9,217.8
+156,Suburb B,Mall,19.36,Petrol Car,40.7,Low,Rainy,21.7,198
+157,Airport,Downtown,3.04,Motorbike,79.1,Low,Clear,37.5,100
+158,Suburb A,Downtown,8.66,Petrol Car,20.5,Medium,Clear,12.1,217.8
+159,Suburb A,University,14.85,Electric Vehicle,24.3,High,Clear,-4.2,26.4
+160,City Center,Downtown,15.24,Bus,44.3,Medium,Clear,13.2,275
+161,Suburb B,Mall,20.43,Bus,47.6,Medium,Clear,14.7,275
+162,City Center,Mall,12.02,Motorbike,51.4,Medium,Clear,10.3,110
+163,Suburb B,Mall,3.76,Petrol Car,51.8,Low,Rainy,10.8,198
+164,Suburb A,Mall,4.36,Electric Vehicle,31.8,Medium,Rainy,24.5,26.4
+165,Suburb A,Train Station,12.67,Bus,65.6,Medium,Snowy,20.4,325
+166,Airport,Downtown,21.88,Electric Vehicle,29.1,Low,Clear,8.6,22
+167,Suburb B,University,3.29,Bus,24.5,Medium,Clear,11.6,302.5
+168,Suburb B,Park,16.83,Petrol Car,56.9,Medium,Clear,19.9,198
+169,City Center,Train Station,22.91,Bus,59.1,Medium,Clear,1.8,275
+170,City Center,Train Station,4.38,Electric Vehicle,78.9,Low,Rainy,-3.2,22
+171,Industrial Zone,Train Station,14.05,Bus,29.5,Medium,Clear,13.4,302.5
+172,Suburb B,University,3.2,Electric Vehicle,24,Low,Rainy,7.8,24.2
+173,Airport,Mall,9.67,Bus,59.8,High,Clear,24.5,300
+174,Industrial Zone,Mall,15.69,Petrol Car,38.6,Medium,Rainy,31.6,237.6
+175,Airport,Park,16.86,Motorbike,50.5,Low,Clear,37.8,100
+176,Suburb B,Train Station,6.42,Diesel Car,29.3,Low,Rainy,17.8,242
+177,Airport,University,2.87,Electric Vehicle,72.6,Medium,Clear,1.9,22
+178,Suburb A,University,20.61,Diesel Car,63.3,Low,Clear,27.4,200
+179,Industrial Zone,University,8.55,Motorbike,34,Low,Snowy,30.3,132
+180,Suburb A,Downtown,17.6,Bus,79.1,Medium,Clear,12.2,275
+181,Airport,Train Station,24.22,Diesel Car,68.1,Low,Clear,23.9,200
+182,Suburb B,University,23.49,Bus,71.1,Low,Rainy,7.3,275
+183,Airport,Mall,21.11,Petrol Car,76.8,Low,Clear,10.7,180
+184,City Center,Train Station,3.22,Bus,42.4,Medium,Clear,5.1,275
+185,Suburb B,Park,21.3,Electric Vehicle,67.5,Low,Clear,32.3,20
+186,Suburb A,Train Station,12.32,Petrol Car,74.4,Low,Clear,1.7,180
+187,Airport,University,11.73,Electric Vehicle,34.3,Low,Clear,23.8,22
+188,Airport,Train Station,3.44,Motorbike,55.8,Low,Clear,5.9,100
+189,Suburb A,Downtown,11.87,Bus,41.2,Medium,Clear,25.1,275
+190,Airport,Downtown,3.56,Bus,52.6,Medium,Clear,-4.1,275
+191,Industrial Zone,Park,16.62,Electric Vehicle,35.2,Low,Rainy,10.5,24.2
+192,City Center,University,18.91,Electric Vehicle,28,Medium,Clear,23.9,24.2
+193,Industrial Zone,Train Station,16.53,Diesel Car,23.8,Medium,Clear,8.2,242
+194,City Center,Mall,22.37,Electric Vehicle,76,Medium,Snowy,19.4,26
+195,Suburb B,Park,19.33,Diesel Car,37.2,High,Clear,24.5,264
+196,Suburb B,Park,20.38,Motorbike,73.4,Medium,Rainy,12.4,120
+197,Suburb A,Train Station,17.92,Electric Vehicle,75.5,Medium,Rainy,27.7,24
+198,City Center,Train Station,15.86,Diesel Car,52.7,Medium,Clear,24.7,220
+199,Suburb B,Train Station,15.86,Motorbike,30,Medium,Clear,27.7,121
+200,Suburb B,University,24.96,Electric Vehicle,58.4,Medium,Clear,25.2,22
+201,Industrial Zone,Downtown,13.8,Diesel Car,77.2,Low,Rainy,30.2,220
+202,City Center,Mall,3.55,Electric Vehicle,41.7,High,Clear,1.9,24
+203,Industrial Zone,Downtown,10.56,Petrol Car,54.4,Medium,Clear,24.2,198
+204,Suburb A,Park,2.6,Diesel Car,49.9,Medium,Clear,6.8,220
+205,Suburb B,Train Station,6.94,Bus,37.1,High,Clear,0.5,330
+206,City Center,Train Station,5.97,Motorbike,79.8,High,Snowy,39.4,140
+207,Suburb B,Park,14.65,Electric Vehicle,73.5,High,Rainy,36.7,26
+208,Suburb A,Downtown,13.7,Petrol Car,79.1,Medium,Clear,17.2,198
+209,Suburb B,University,15.16,Motorbike,68.2,Medium,Rainy,-1.1,120
+210,Suburb B,Train Station,24.99,Motorbike,51.5,Medium,Rainy,-1.7,120
+211,Suburb B,Park,12.35,Bus,40.7,High,Rainy,23.8,325
+212,Suburb A,Mall,11.95,Petrol Car,69.9,Medium,Clear,2.3,198
+213,Suburb A,Downtown,23.79,Bus,73.7,High,Clear,23.6,300
+214,Airport,Downtown,4.88,Electric Vehicle,56.9,Low,Rainy,21.6,22
+215,Airport,Mall,5.94,Bus,63.2,Medium,Rainy,20.4,300
+216,City Center,Park,3.05,Bus,35.9,Low,Clear,22.8,275
+217,City Center,Train Station,22.45,Bus,37.4,High,Clear,31.2,330
+218,Industrial Zone,Downtown,12.43,Petrol Car,29.5,Medium,Clear,10.3,217.8
+219,Suburb A,Downtown,21.81,Electric Vehicle,64.1,High,Snowy,0.9,28
+220,Suburb B,University,14.92,Electric Vehicle,34.5,Low,Clear,1.3,22
+221,City Center,Downtown,23.74,Bus,45.1,High,Snowy,31.6,350
+222,Airport,Downtown,6.37,Diesel Car,49.9,Medium,Clear,8.9,220
+223,City Center,Park,23.74,Bus,47.4,Low,Clear,-2.8,250
+224,Suburb B,Train Station,15.74,Motorbike,37.1,Low,Clear,1,110
+225,Suburb B,Downtown,19.57,Electric Vehicle,22.7,Low,Clear,11.3,22
+226,Suburb B,Park,10.89,Motorbike,65.9,Low,Snowy,25.6,120
+227,City Center,Mall,24.43,Motorbike,42.4,High,Clear,11.5,120
+228,Suburb A,Mall,15.86,Motorbike,50,Low,Clear,10,100
+229,Industrial Zone,University,12.51,Bus,73.6,Low,Snowy,9.3,300
+230,Industrial Zone,University,19,Electric Vehicle,55.6,Medium,Clear,17,22
+231,Airport,Downtown,12.92,Petrol Car,42.1,Medium,Snowy,21.3,234
+232,City Center,University,12.92,Bus,54.7,Medium,Clear,2.7,275
+233,Airport,Train Station,5.4,Diesel Car,21.9,High,Clear,-4.1,264
+234,Suburb B,Train Station,5.48,Diesel Car,44.6,Medium,Snowy,34.3,260
+235,City Center,Mall,13.93,Bus,39.5,Medium,Clear,9.1,302.5
+236,Suburb A,Train Station,22.98,Electric Vehicle,52.8,Medium,Rainy,25.6,24
+237,Suburb B,University,13.14,Diesel Car,36.7,Low,Snowy,39.2,264
+238,Suburb B,Mall,17.88,Motorbike,39,Medium,Snowy,30.8,143
+239,Suburb B,Downtown,4.8,Bus,42.8,High,Rainy,38,325
+240,Suburb A,Downtown,2.97,Petrol Car,40.8,Medium,Clear,16.6,198
+241,Suburb A,University,8.24,Bus,61.8,Low,Rainy,21.4,275
+242,Suburb A,Park,17.41,Bus,33.5,Low,Clear,9.9,275
+243,Industrial Zone,Park,17.67,Diesel Car,20.3,Medium,Snowy,13.3,286
+244,Industrial Zone,Train Station,16.96,Electric Vehicle,39.3,Medium,Snowy,-1,28.6
+245,Airport,Mall,14.31,Petrol Car,74.8,Low,Rainy,2.9,198
+246,City Center,Train Station,20.12,Diesel Car,76.2,High,Snowy,34.5,280
+247,City Center,Downtown,15.06,Petrol Car,75.7,Medium,Clear,23.9,198
+248,Airport,Train Station,22.45,Diesel Car,71.1,Medium,Clear,0.1,220
+249,Suburb A,Train Station,16.91,Diesel Car,20.8,Medium,Clear,25.3,242
+250,Suburb A,Mall,16.05,Motorbike,69.6,Medium,Clear,25.1,110
+251,Suburb A,Mall,12.98,Diesel Car,20.4,Medium,Clear,7,242
+252,Suburb B,Downtown,15.4,Bus,20.7,Medium,Rainy,-2.2,330
+253,City Center,Train Station,9.06,Motorbike,61.2,High,Rainy,29.6,130
+254,City Center,Downtown,10.45,Diesel Car,33.1,Low,Clear,28.6,220
+255,Airport,Downtown,11.56,Bus,74.8,Medium,Rainy,32.2,300
+256,Suburb A,University,22.08,Petrol Car,51.5,Medium,Clear,36.3,198
+257,City Center,Park,21.06,Bus,32.1,Medium,Clear,33.5,302.5
+258,Industrial Zone,Park,17.65,Bus,49.3,High,Clear,-2.5,300
+259,Suburb A,University,11.55,Bus,23.5,Medium,Rainy,27.5,330
+260,Industrial Zone,Downtown,20.78,Diesel Car,54.7,Low,Clear,-2.1,200
+261,City Center,Park,24.68,Motorbike,21.9,Medium,Rainy,29.5,132
+262,Industrial Zone,Downtown,24.84,Motorbike,46.9,High,Clear,-1.4,120
+263,Airport,Mall,17.03,Electric Vehicle,27.1,High,Clear,0.7,26.4
+264,Suburb A,Park,19.39,Electric Vehicle,47.8,Medium,Clear,12.1,22
+265,Suburb A,Mall,12.59,Diesel Car,36.5,High,Rainy,0.1,286
+266,Industrial Zone,University,19.62,Petrol Car,34.4,Low,Clear,15.1,198
+267,City Center,Mall,19.03,Motorbike,46.3,Medium,Rainy,29.9,120
+268,Suburb A,University,24.85,Diesel Car,68.9,Medium,Clear,21.9,220
+269,Suburb B,Mall,8.94,Diesel Car,79.1,Medium,Clear,7.4,220
+270,Airport,University,22.23,Diesel Car,57.6,Medium,Clear,38.8,220
+271,Industrial Zone,University,9.33,Motorbike,44.5,Low,Clear,19.2,100
+272,Suburb A,Mall,8.92,Diesel Car,68.3,High,Clear,38.6,240
+273,Airport,University,5.08,Diesel Car,35.3,Medium,Clear,15.2,242
+274,Suburb B,Park,14.32,Diesel Car,23.1,Medium,Rainy,-3.2,264
+275,City Center,Mall,20.51,Bus,63.5,Medium,Clear,34.1,275
+276,Suburb B,Downtown,24.01,Petrol Car,32.7,Low,Rainy,28.6,217.8
+277,Industrial Zone,Mall,18,Diesel Car,43.8,Low,Clear,7.7,200
+278,Industrial Zone,University,16.92,Electric Vehicle,35.7,Medium,Clear,-0.6,24.2
+279,Industrial Zone,Downtown,23.03,Electric Vehicle,38.8,Low,Rainy,28.4,24.2
+280,City Center,Downtown,14.73,Bus,54.7,Medium,Clear,9.8,275
+281,Industrial Zone,University,21.17,Motorbike,53,High,Clear,29.4,120
+282,Industrial Zone,Train Station,12.6,Electric Vehicle,30.2,Medium,Clear,36.3,24.2
+283,Airport,Park,14.05,Petrol Car,76.7,Medium,Rainy,13.6,216
+284,Suburb A,Park,18.26,Petrol Car,33.1,Medium,Clear,23.7,217.8
+285,Airport,Train Station,17.16,Petrol Car,20.4,Medium,Clear,18.8,217.8
+286,Suburb B,University,24.48,Petrol Car,50.1,Medium,Clear,37.3,198
+287,Suburb A,Park,23.12,Bus,28.9,Low,Clear,31.7,275
+288,Suburb B,Train Station,3.82,Motorbike,47.5,Low,Rainy,8.5,110
+289,City Center,Park,4.15,Motorbike,42.6,Medium,Rainy,26.6,120
+290,City Center,Train Station,21.44,Electric Vehicle,54,High,Clear,18.8,24
+291,City Center,Mall,6.86,Bus,48.5,Low,Clear,36.7,250
+292,Airport,University,17.14,Diesel Car,75.7,Medium,Snowy,21.4,260
+293,Industrial Zone,Park,8.88,Bus,34.4,High,Clear,35.3,330
+294,Suburb B,Train Station,19.38,Diesel Car,67.4,Medium,Clear,28.5,220
+295,Suburb B,Park,4.25,Diesel Car,70.3,Medium,Rainy,38,240
+296,Industrial Zone,Downtown,2.68,Electric Vehicle,67,Medium,Clear,19.9,22
+297,Industrial Zone,Train Station,6.27,Bus,59.6,Low,Rainy,30.9,275
+298,City Center,Park,8.16,Motorbike,62.7,Medium,Rainy,9.3,120
+299,City Center,Park,2.12,Electric Vehicle,46.7,Medium,Clear,-1.1,22
+300,Industrial Zone,Train Station,14.81,Bus,44.5,Low,Clear,-0.8,250
+301,Airport,Downtown,21.87,Petrol Car,37.5,Medium,Clear,35.6,217.8
+302,Suburb A,University,13.99,Motorbike,30.2,Low,Clear,1.6,110
+303,Suburb A,Train Station,8.35,Electric Vehicle,49.1,Low,Clear,6.1,20
+304,Industrial Zone,University,16.18,Motorbike,26.4,Medium,Snowy,9.9,143
+305,Airport,Train Station,20.49,Electric Vehicle,46.4,Medium,Rainy,24.3,24
+306,Airport,Mall,8.91,Bus,76.8,Low,Clear,38.4,250
+307,Suburb B,Downtown,18.9,Motorbike,78.1,Medium,Clear,7.6,110
+308,Industrial Zone,Downtown,4.62,Bus,32,High,Clear,29.5,330
+309,City Center,Train Station,23.69,Diesel Car,46.3,Low,Rainy,31.9,220
+310,Industrial Zone,Train Station,5.2,Electric Vehicle,34.5,Medium,Rainy,30.5,26.4
+311,City Center,Train Station,24.79,Motorbike,54.9,Medium,Snowy,34.1,130
+312,Industrial Zone,University,2.85,Electric Vehicle,62.1,High,Clear,36.1,24
+313,City Center,Mall,17.12,Electric Vehicle,30,Medium,Clear,24,24.2
+314,Industrial Zone,Downtown,24.21,Motorbike,26.4,Low,Clear,28.6,110
+315,Airport,University,17.82,Diesel Car,46.7,Medium,Rainy,21.5,240
+316,Airport,Mall,9.93,Petrol Car,49,Low,Snowy,-1.1,216
+317,Suburb A,Downtown,9.17,Motorbike,67.1,Medium,Clear,-0.6,110
+318,Industrial Zone,Downtown,3.55,Petrol Car,68.6,Low,Rainy,24.2,198
+319,Suburb A,Mall,13.87,Bus,29.6,Medium,Snowy,5.4,357.5
+320,Industrial Zone,Mall,6.29,Motorbike,43.7,Medium,Rainy,15.2,120
+321,Industrial Zone,Train Station,2.1,Diesel Car,32.3,Medium,Rainy,-2.2,264
+322,City Center,University,6.3,Electric Vehicle,31.8,Low,Rainy,17,24.2
+323,Suburb B,University,10.94,Motorbike,55.2,Medium,Rainy,22.8,120
+324,Suburb B,University,15.57,Diesel Car,38.8,Low,Clear,11.8,220
+325,Suburb A,University,10.93,Bus,28.3,Medium,Clear,23.6,302.5
+326,Suburb A,University,5.84,Electric Vehicle,28.4,Medium,Clear,-2.6,24.2
+327,Suburb B,Park,13.15,Diesel Car,68.9,High,Clear,17.3,240
+328,Industrial Zone,Train Station,18.33,Motorbike,49.3,Low,Clear,29.2,100
+329,Suburb B,Park,8.32,Bus,37.3,Medium,Clear,29.8,302.5
+330,Industrial Zone,University,13.75,Bus,26.9,Medium,Rainy,11.5,330
+331,City Center,Train Station,14.57,Motorbike,26.1,High,Rainy,8.4,143
+332,City Center,Train Station,8.04,Petrol Car,46.3,High,Rainy,5.7,234
+333,Airport,Downtown,21.8,Bus,58,Low,Clear,4.3,250
+334,Suburb A,Park,15.11,Bus,36.9,Medium,Clear,26.7,302.5
+335,Suburb B,University,8.15,Bus,79.1,Medium,Clear,38.3,275
+336,Industrial Zone,Park,24.83,Diesel Car,62.1,Low,Clear,9.5,200
+337,Suburb A,Train Station,13.26,Bus,57.9,Medium,Clear,-1.6,275
+338,City Center,Train Station,13.86,Electric Vehicle,61.7,High,Clear,17,24
+339,Airport,Park,21.98,Petrol Car,63.9,Medium,Rainy,11.1,216
+340,City Center,University,11.15,Motorbike,69.5,Medium,Clear,7.8,110
+341,Airport,University,5,Motorbike,67.3,High,Rainy,-2.9,130
+342,Industrial Zone,Park,4.86,Diesel Car,46.5,Low,Snowy,4.1,240
+343,Suburb A,Downtown,5.66,Electric Vehicle,25.6,Medium,Clear,24.9,24.2
+344,Suburb A,Park,11.12,Electric Vehicle,63.6,Medium,Clear,-0.9,22
+345,City Center,Park,6.91,Petrol Car,28,Low,Rainy,-4.6,217.8
+346,Suburb B,Park,24.73,Motorbike,61.6,Medium,Clear,-1,110
+347,City Center,Park,9.21,Electric Vehicle,28.2,Medium,Rainy,1,26.4
+348,Suburb A,Park,14.2,Petrol Car,56.6,Low,Clear,4.6,180
+349,Suburb A,Train Station,16.17,Motorbike,71.6,Low,Clear,28.9,100
+350,Airport,Train Station,10.09,Motorbike,38.9,Low,Clear,-1.2,110
+351,Airport,University,15.8,Bus,37.1,High,Clear,33.1,330
+352,Suburb B,Mall,13.91,Bus,31.3,Medium,Rainy,30.3,330
+353,Suburb A,Train Station,10.88,Diesel Car,50,Medium,Clear,39,220
+354,Suburb B,Downtown,5.04,Bus,45.3,Medium,Clear,16.2,275
+355,City Center,Park,15.51,Petrol Car,35.7,Low,Clear,30.5,198
+356,Airport,Downtown,16.46,Bus,66,Medium,Clear,23.8,275
+357,Airport,University,5.51,Petrol Car,38.6,Medium,Clear,31.4,217.8
+358,Airport,Downtown,10.99,Petrol Car,38.6,Medium,Snowy,5.7,257.4
+359,Suburb A,Park,23.27,Petrol Car,47.2,Medium,Clear,28.4,198
+360,Suburb A,Park,2.29,Diesel Car,62.1,Low,Snowy,18.5,240
+361,Suburb B,Mall,10.55,Electric Vehicle,64,Low,Rainy,10.1,22
+362,Industrial Zone,Downtown,14.05,Electric Vehicle,62.7,Medium,Clear,15.5,22
+363,Suburb B,Park,13.49,Bus,30,Low,Rainy,35.2,302.5
+364,City Center,Mall,19.04,Petrol Car,22.6,High,Clear,16.2,237.6
+365,Industrial Zone,Mall,6.12,Petrol Car,53.2,High,Rainy,13.9,234
+366,Suburb B,Mall,11.57,Electric Vehicle,36.3,Low,Clear,17.6,22
+367,City Center,Mall,7.13,Bus,78.9,High,Clear,15.9,300
+368,Suburb B,Downtown,9.53,Bus,47.4,Medium,Clear,30.3,275
+369,Airport,Mall,12.67,Bus,78.3,High,Rainy,28,325
+370,Airport,Mall,5.46,Motorbike,21.4,Medium,Rainy,26.2,132
+371,City Center,Downtown,2.03,Motorbike,70.9,Medium,Clear,18.8,110
+372,Suburb A,Train Station,13.32,Petrol Car,78.4,Low,Clear,-3,180
+373,Suburb A,University,11.5,Electric Vehicle,47.5,Medium,Clear,17.7,22
+374,Industrial Zone,Park,15.61,Petrol Car,46.1,High,Clear,6.7,216
+375,Suburb B,Train Station,18.12,Electric Vehicle,39.1,Low,Clear,4.1,22
+376,Airport,Park,5.57,Diesel Car,47,Medium,Clear,11.1,220
+377,Suburb A,Train Station,9.09,Electric Vehicle,71.1,Low,Rainy,8.7,22
+378,Airport,Park,6.95,Electric Vehicle,28.9,Medium,Snowy,12.8,28.6
+379,City Center,Downtown,7.98,Diesel Car,21.9,Medium,Clear,28.7,242
+380,Suburb A,Park,12.63,Diesel Car,27.3,Low,Rainy,5,242
+381,Suburb A,Train Station,10.56,Petrol Car,54.9,Low,Rainy,-4,198
+382,City Center,Mall,22.76,Motorbike,68.6,Low,Rainy,31.4,110
+383,City Center,Park,23.67,Petrol Car,30.1,Medium,Rainy,12.8,237.6
+384,City Center,Train Station,17.71,Diesel Car,41.2,High,Clear,15.1,240
+385,Suburb A,Park,16.12,Bus,34.7,Low,Clear,19.8,275
+386,City Center,Park,8.43,Diesel Car,45.2,Medium,Rainy,6.2,240
+387,Airport,Park,24.76,Electric Vehicle,48.8,Medium,Clear,20.5,22
+388,Suburb B,Train Station,8.22,Petrol Car,39.1,Low,Rainy,30,217.8
+389,City Center,Train Station,14.18,Bus,80,High,Clear,24.6,300
+390,Suburb B,University,20.77,Petrol Car,65.8,High,Clear,39.2,216
+391,Industrial Zone,Downtown,23.51,Diesel Car,30.6,Medium,Rainy,26.4,264
+392,Airport,Park,18.18,Electric Vehicle,76.9,Medium,Clear,3.5,22
+393,Industrial Zone,University,9.11,Motorbike,22.3,Low,Rainy,-4.1,121
+394,Industrial Zone,Park,9.63,Bus,32.1,Low,Rainy,36.3,302.5
+395,Suburb B,Park,2.5,Bus,62.3,Low,Clear,18.7,250
+396,Suburb B,Park,10.59,Motorbike,55.2,Medium,Clear,38.9,110
+397,Industrial Zone,Train Station,16.93,Diesel Car,62.4,Medium,Rainy,22.6,240
+398,Suburb B,Mall,17.31,Diesel Car,42.7,Medium,Clear,3,220
+399,City Center,University,11.01,Bus,21.9,Medium,Snowy,38.5,357.5
+400,Suburb A,University,4.39,Motorbike,28.4,Medium,Clear,39.2,121
+401,Suburb A,Park,20.9,Electric Vehicle,46.8,Low,Clear,-1.9,20
+402,Suburb B,Park,18.57,Petrol Car,43.2,Medium,Snowy,34.8,234
+403,Industrial Zone,Train Station,10.08,Motorbike,26.1,Medium,Rainy,24.3,132
+404,Suburb A,Mall,12.38,Petrol Car,37.7,Medium,Snowy,-1.7,257.4
+405,Suburb A,Train Station,5.7,Petrol Car,52.8,High,Clear,21.7,216
+406,Airport,Train Station,18.2,Motorbike,76.5,Low,Rainy,2.1,110
+407,City Center,Downtown,6.73,Diesel Car,44.6,Medium,Snowy,19.3,260
+408,Suburb B,Downtown,7.46,Petrol Car,43.6,Medium,Clear,-2.5,198
+409,City Center,Train Station,4.02,Bus,48.8,Low,Clear,23.7,250
+410,City Center,Train Station,21.41,Electric Vehicle,67.1,Medium,Rainy,6.9,24
+411,Airport,Train Station,6.25,Motorbike,42.2,Medium,Clear,15.9,110
+412,Suburb A,Downtown,14.98,Diesel Car,65.1,Medium,Clear,10.5,220
+413,Airport,Train Station,24.33,Bus,33.7,Low,Clear,18.5,275
+414,Airport,Train Station,15.17,Diesel Car,48.6,Low,Snowy,27.1,240
+415,Airport,University,22.71,Bus,60.7,Medium,Clear,29.1,275
+416,Suburb A,Mall,24.36,Diesel Car,27.6,Medium,Snowy,14.6,286
+417,Suburb A,University,7.93,Petrol Car,25.2,Medium,Clear,33.5,217.8
+418,Airport,Train Station,23.09,Petrol Car,67.2,Medium,Clear,13.9,198
+419,Industrial Zone,Mall,5.41,Bus,55,High,Clear,-0.2,300
+420,City Center,Downtown,21.95,Electric Vehicle,72.7,Low,Rainy,20.7,22
+421,Industrial Zone,Park,5.96,Motorbike,28.6,Medium,Rainy,-3.3,132
+422,Suburb B,Mall,3.13,Motorbike,75.3,High,Clear,31.8,120
+423,Suburb B,Downtown,8.45,Motorbike,71.5,Medium,Snowy,5.3,130
+424,Suburb B,Train Station,19.8,Electric Vehicle,36.2,Medium,Rainy,3.5,26.4
+425,Suburb A,Train Station,19.04,Bus,72,High,Clear,2.2,300
+426,Suburb B,University,11.28,Bus,72.8,Low,Clear,32.5,250
+427,City Center,Mall,2.76,Petrol Car,75.1,Medium,Clear,32.1,198
+428,Airport,Train Station,16.61,Petrol Car,60.9,Low,Clear,15.1,180
+429,Industrial Zone,University,14.68,Electric Vehicle,29.8,High,Rainy,26,28.6
+430,Suburb B,Park,10.89,Diesel Car,71.2,Medium,Clear,5,220
+431,Suburb A,Mall,8.19,Motorbike,50.8,High,Snowy,25.7,140
+432,Industrial Zone,Mall,16.89,Bus,68.1,Low,Rainy,37.4,275
+433,Suburb B,Train Station,22.6,Electric Vehicle,47.5,Low,Clear,18.4,20
+434,Airport,Train Station,15.44,Petrol Car,50.7,Medium,Rainy,11.8,216
+435,Airport,University,8.5,Petrol Car,48.9,Medium,Clear,9.6,198
+436,Suburb B,Downtown,17.09,Electric Vehicle,31.3,Medium,Clear,-2.4,24.2
+437,Airport,Train Station,17.19,Diesel Car,63.3,Medium,Snowy,6.7,260
+438,Industrial Zone,Train Station,10.93,Petrol Car,55,High,Rainy,10.4,234
+439,Suburb A,University,16.68,Motorbike,74.4,Medium,Clear,33,110
+440,Airport,Mall,8.76,Motorbike,27.7,Low,Rainy,29.3,121
+441,Suburb A,Downtown,17.05,Diesel Car,41.3,Medium,Clear,30.5,220
+442,Suburb B,Downtown,7.99,Electric Vehicle,47.8,Low,Clear,23.5,20
+443,Airport,University,3.64,Diesel Car,50,High,Clear,8.4,240
+444,City Center,Mall,5.16,Diesel Car,40.6,High,Rainy,39.4,260
+445,Suburb A,Downtown,21.84,Diesel Car,66.7,Medium,Rainy,3,240
+446,City Center,Park,12.4,Diesel Car,65.7,Low,Rainy,17,220
+447,City Center,Mall,16.13,Motorbike,44.2,High,Clear,-3.3,120
+448,Suburb A,Downtown,23.85,Electric Vehicle,65.4,Medium,Clear,-4.8,22
+449,Suburb A,Mall,17.95,Electric Vehicle,38.7,Low,Clear,8.8,22
+450,City Center,Park,8.86,Electric Vehicle,47.4,Medium,Clear,14.5,22
+451,Suburb A,Downtown,24.91,Motorbike,41.6,Low,Snowy,36.3,120
+452,Industrial Zone,Park,7.25,Diesel Car,32.7,Low,Clear,0.5,220
+453,City Center,Train Station,22.16,Electric Vehicle,66.3,Medium,Clear,-2.8,22
+454,City Center,Park,3.11,Petrol Car,45,Medium,Clear,16.3,198
+455,Suburb A,Mall,17.99,Petrol Car,38.1,Medium,Rainy,7.1,237.6
+456,Airport,Mall,11.63,Petrol Car,50.7,Medium,Clear,30.3,198
+457,Industrial Zone,Mall,16.01,Electric Vehicle,69.9,High,Clear,13.4,24
+458,Suburb A,Park,14.61,Diesel Car,61.3,Medium,Clear,-4.4,220
+459,City Center,Park,21.21,Motorbike,28.9,Low,Clear,27.6,110
+460,City Center,Downtown,16.82,Motorbike,79.3,Low,Clear,-0.5,100
+461,Suburb A,Park,21.6,Electric Vehicle,68.1,Medium,Rainy,-0.7,24
+462,City Center,Park,21.6,Diesel Car,39.7,High,Snowy,7.1,308
+463,City Center,Downtown,20.74,Diesel Car,26.8,Medium,Clear,32.6,242
+464,Industrial Zone,Train Station,16.92,Diesel Car,26.8,Medium,Clear,37.4,242
+465,Suburb A,Park,11.57,Bus,49,Medium,Clear,22.5,275
+466,Suburb B,University,2.66,Diesel Car,49,Medium,Rainy,14.8,240
+467,City Center,Downtown,17.06,Petrol Car,62.3,Medium,Rainy,20.9,216
+468,Airport,Mall,24.49,Electric Vehicle,51.1,Medium,Rainy,14.5,24
+469,Suburb A,Train Station,9.95,Motorbike,28.9,High,Rainy,22.6,143
+470,City Center,Mall,13.63,Motorbike,71.1,High,Clear,17.1,120
+471,Suburb A,Downtown,24.31,Petrol Car,50.4,Medium,Clear,31.8,198
+472,City Center,Train Station,12.22,Bus,46.9,High,Clear,0.3,300
+473,Industrial Zone,Park,4.36,Motorbike,22.1,Medium,Rainy,30.6,132
+474,Airport,Downtown,22.47,Bus,32.4,Medium,Snowy,11.4,357.5
+475,City Center,Mall,21.42,Electric Vehicle,53.6,Medium,Clear,24.6,22
+476,Industrial Zone,Park,4.24,Diesel Car,20.1,Medium,Rainy,31,264
+477,Airport,University,10.6,Petrol Car,22.7,Low,Clear,27.3,198
+478,Industrial Zone,Park,7.85,Diesel Car,31.3,High,Clear,15.6,264
+479,Suburb A,Downtown,4.48,Motorbike,22.8,Medium,Rainy,0.5,132
+480,Industrial Zone,Train Station,17.14,Bus,28.1,Medium,Clear,-2.8,302.5
+481,Industrial Zone,University,13.11,Bus,66.9,High,Rainy,2.8,325
+482,Suburb A,Park,10.91,Bus,56.4,Medium,Rainy,13.8,300
+483,Airport,Mall,8.29,Electric Vehicle,78.2,Medium,Clear,13.6,22
+484,Airport,Downtown,21.39,Bus,71.6,Medium,Snowy,23.5,325
+485,Suburb A,Mall,16.36,Electric Vehicle,61.2,High,Clear,27,24
+486,Suburb A,University,14.48,Electric Vehicle,62.6,Medium,Clear,21.2,22
+487,Industrial Zone,University,8.58,Motorbike,68.5,Medium,Clear,1.5,110
+488,City Center,Mall,8.14,Diesel Car,79,Medium,Clear,-2.2,220
+489,Suburb B,Mall,19.33,Petrol Car,41.5,Medium,Rainy,25.4,216
+490,Airport,Mall,19.08,Bus,43.3,Medium,Rainy,26.3,300
+491,City Center,Train Station,10.91,Electric Vehicle,77.9,Low,Rainy,4.1,22
+492,Industrial Zone,Mall,22.96,Electric Vehicle,65.3,Medium,Rainy,29.9,24
+493,Suburb A,Downtown,12.32,Petrol Car,31.2,Low,Clear,12,198
+494,Industrial Zone,Downtown,14.8,Diesel Car,29.7,High,Clear,16,264
+495,Suburb A,Park,5.54,Electric Vehicle,55.8,Medium,Rainy,32.9,24
+496,Suburb B,Train Station,20.17,Bus,41.5,Medium,Clear,4.9,275
+497,Suburb A,University,3.57,Bus,29.6,Medium,Clear,10.7,302.5
+498,Suburb A,Downtown,9.61,Electric Vehicle,33.1,Medium,Clear,39.8,24.2
+499,City Center,Park,17.39,Motorbike,34.4,Medium,Snowy,6,143
+500,City Center,Downtown,10.77,Petrol Car,43.2,Medium,Clear,36,198
+501,Suburb B,University,20.46,Motorbike,49.2,Low,Rainy,9.4,110
+502,City Center,Park,5.85,Bus,52,Medium,Clear,23.3,275
+503,Suburb A,Train Station,21.22,Diesel Car,52.3,Medium,Snowy,29.9,260
+504,City Center,Mall,2.55,Electric Vehicle,22.3,Low,Clear,6.3,22
+505,City Center,University,20.9,Electric Vehicle,44.5,Medium,Clear,9.2,22
+506,Industrial Zone,Park,14.3,Bus,23.8,Medium,Clear,33.2,302.5
+507,Suburb B,University,4.44,Electric Vehicle,56.4,Low,Snowy,12.2,24
+508,City Center,Train Station,5.6,Diesel Car,28.2,Medium,Rainy,19.6,264
+509,Suburb A,Downtown,17.58,Electric Vehicle,77.4,Low,Rainy,1.4,22
+510,City Center,Park,15.17,Motorbike,52.2,High,Clear,28.7,120
+511,Suburb B,Mall,11.49,Bus,28.5,Low,Rainy,6.4,302.5
+512,City Center,Mall,17.43,Bus,71.1,High,Snowy,39.7,350
+513,Industrial Zone,University,3.68,Petrol Car,35,Low,Clear,37.8,198
+514,Suburb B,Mall,17.44,Diesel Car,26,Medium,Snowy,9.3,286
+515,Industrial Zone,Downtown,16.18,Electric Vehicle,61.6,Low,Clear,31.3,20
+516,Industrial Zone,Mall,2.11,Diesel Car,67.1,Medium,Rainy,7.5,240
+517,Suburb B,Mall,17.63,Electric Vehicle,72.7,Medium,Clear,8.7,22
+518,Airport,Park,6.04,Bus,24.9,Low,Rainy,35.1,302.5
+519,Suburb A,Downtown,18.87,Petrol Car,63.6,High,Rainy,23.4,234
+520,Airport,University,11.32,Bus,32.8,Low,Clear,35.2,275
+521,Airport,Train Station,17.04,Diesel Car,41.9,Low,Rainy,28,220
+522,Suburb B,Mall,12.69,Bus,25.4,Medium,Clear,5.7,302.5
+523,Airport,Mall,19.42,Diesel Car,46.8,Low,Snowy,24.7,240
+524,Suburb A,Train Station,23.6,Petrol Car,33.1,Medium,Clear,11.6,217.8
+525,City Center,Mall,13.91,Electric Vehicle,43.3,High,Rainy,-3.2,26
+526,Suburb B,Park,18.19,Bus,58,Low,Rainy,21,275
+527,Airport,Mall,10.66,Motorbike,41.9,Medium,Rainy,18.2,120
+528,Industrial Zone,Mall,13.88,Electric Vehicle,69,Medium,Rainy,34.9,24
+529,City Center,University,22.29,Motorbike,29.9,Low,Rainy,4.5,121
+530,Suburb A,Mall,10.33,Petrol Car,59.7,Medium,Clear,0.1,198
+531,Industrial Zone,Train Station,6.85,Diesel Car,58.8,Medium,Clear,0.8,220
+532,Airport,Mall,5.1,Bus,22.4,Medium,Clear,6.6,302.5
+533,Suburb A,University,24.04,Bus,78.2,Medium,Rainy,27.8,300
+534,Suburb B,Park,6.98,Bus,79.6,High,Clear,32.4,300
+535,Airport,Mall,20.28,Diesel Car,57.4,Medium,Clear,25.9,220
+536,Industrial Zone,University,15.58,Diesel Car,42.7,Low,Clear,18.5,200
+537,Airport,Train Station,21.01,Bus,25.8,Medium,Rainy,-3.2,330
+538,Airport,University,19.3,Petrol Car,48.9,Low,Rainy,32.2,198
+539,Industrial Zone,University,11.68,Petrol Car,61.9,Medium,Snowy,16.7,234
+540,Industrial Zone,Downtown,15.55,Bus,25.9,Low,Clear,5.5,275
+541,City Center,Downtown,15.76,Bus,44.5,Low,Rainy,30.5,275
+542,Airport,University,4.71,Petrol Car,42.5,Low,Rainy,13.4,198
+543,City Center,Mall,11.8,Bus,35.2,High,Clear,11.5,330
+544,Suburb B,Train Station,19.36,Motorbike,53.1,Medium,Clear,20.2,110
+545,Industrial Zone,Downtown,24.74,Bus,40.7,Medium,Rainy,33.5,300
+546,City Center,Mall,12.27,Diesel Car,26,Medium,Rainy,31,264
+547,Airport,Park,5.7,Petrol Car,68.3,High,Clear,22,216
+548,City Center,Park,8.05,Electric Vehicle,24.8,Low,Clear,39.3,22
+549,Airport,University,8.59,Bus,23.4,Medium,Clear,17.2,302.5
+550,City Center,Mall,21.56,Bus,37.2,Low,Clear,18.2,275
+551,Suburb A,University,5.9,Petrol Car,41.6,Medium,Snowy,-1.1,234
+552,Suburb B,Train Station,10.12,Motorbike,44.3,Low,Clear,26.7,100
+553,City Center,University,8.54,Bus,74.9,Medium,Snowy,7.4,325
+554,Airport,Mall,12.46,Motorbike,54.5,Low,Clear,-0.2,100
+555,City Center,University,8.77,Petrol Car,68.2,High,Rainy,31.6,234
+556,Airport,Downtown,17.97,Motorbike,53.8,Medium,Rainy,38.3,120
+557,Industrial Zone,Train Station,22.62,Petrol Car,48.9,Low,Clear,30.5,180
+558,Suburb A,Mall,20.4,Motorbike,77.3,Medium,Clear,32.4,110
+559,Suburb A,Downtown,4.14,Electric Vehicle,24.6,High,Clear,10.9,26.4
+560,Airport,Downtown,6.2,Diesel Car,49.9,Low,Rainy,34.3,220
+561,Suburb A,Mall,6.66,Diesel Car,70.2,Medium,Rainy,0.4,240
+562,City Center,Train Station,16.12,Bus,77.5,High,Clear,9.2,300
+563,Airport,Downtown,13.29,Bus,36.8,Low,Clear,-2.6,275
+564,Industrial Zone,Train Station,23.61,Petrol Car,50.1,Medium,Rainy,2.9,216
+565,City Center,University,12.58,Petrol Car,20.7,Low,Clear,9.6,198
+566,Airport,Downtown,6.3,Electric Vehicle,34.2,Medium,Rainy,11.5,26.4
+567,Industrial Zone,Train Station,6.84,Electric Vehicle,41.9,Medium,Clear,20.7,22
+568,Airport,Mall,20.73,Electric Vehicle,68.2,Medium,Rainy,3.8,24
+569,Suburb A,Train Station,20.53,Diesel Car,45.3,Low,Rainy,23.4,220
+570,Airport,Downtown,20.06,Electric Vehicle,35.1,High,Clear,-0.5,26.4
+571,Suburb A,Park,6.96,Electric Vehicle,48.6,Medium,Clear,10.1,22
+572,Suburb B,Downtown,14.89,Electric Vehicle,40.6,Medium,Clear,25.6,22
+573,Airport,Mall,15.27,Bus,30.5,Medium,Clear,25.3,302.5
+574,Industrial Zone,Train Station,22.46,Motorbike,56.8,Medium,Snowy,34.1,130
+575,Suburb B,Train Station,16.52,Bus,44.3,High,Clear,10.5,300
+576,Suburb B,Downtown,17.02,Electric Vehicle,56.3,Medium,Rainy,30.1,24
+577,Suburb B,University,13.98,Motorbike,44.8,Low,Clear,27.7,100
+578,Suburb B,Park,6.84,Motorbike,26.2,Low,Rainy,19.7,121
+579,City Center,Train Station,14.05,Petrol Car,26.2,Medium,Clear,36.9,217.8
+580,Industrial Zone,Downtown,7.28,Electric Vehicle,46.6,Low,Clear,2.7,20
+581,City Center,Downtown,21.79,Electric Vehicle,71.9,Medium,Rainy,37.1,24
+582,Airport,Train Station,5.11,Bus,30.6,Medium,Rainy,23.6,330
+583,Airport,Train Station,14.04,Bus,38.6,Medium,Clear,31.2,302.5
+584,Industrial Zone,Downtown,10.41,Electric Vehicle,29.3,Low,Clear,29.1,22
+585,Suburb A,Downtown,8.6,Bus,20.5,High,Snowy,16.5,385
+586,City Center,Train Station,20.35,Bus,33.9,Low,Clear,13.5,275
+587,Airport,Train Station,11.08,Diesel Car,62.9,Medium,Rainy,4.9,240
+588,City Center,Train Station,16.38,Bus,65.9,High,Rainy,25.8,325
+589,Suburb B,University,20.6,Motorbike,31.3,Low,Clear,0,110
+590,Industrial Zone,University,12.41,Bus,49.5,Medium,Clear,38.6,275
+591,City Center,Mall,24.36,Electric Vehicle,36.2,Medium,Rainy,5.5,26.4
+592,Suburb A,Park,13.35,Electric Vehicle,45.2,Medium,Clear,11.7,22
+593,City Center,Downtown,3.85,Diesel Car,23.4,Medium,Clear,16.2,242
+594,Suburb A,Downtown,20.8,Petrol Car,27.3,Medium,Clear,29.7,217.8
+595,Industrial Zone,Mall,18.97,Petrol Car,32,Medium,Clear,25,217.8
+596,Suburb A,Train Station,10.95,Electric Vehicle,76.2,Low,Rainy,28.5,22
+597,Airport,University,4.81,Motorbike,58.3,Low,Rainy,33.9,110
+598,Suburb A,Park,7.43,Motorbike,39.5,Low,Clear,0.4,110
+599,Suburb A,Park,24.28,Bus,67,Medium,Clear,11.7,275
+600,City Center,Mall,5.63,Petrol Car,61.2,Medium,Snowy,29.2,234
+601,City Center,Park,10.18,Diesel Car,62.1,Medium,Clear,5.5,220
+602,Airport,Downtown,20.53,Motorbike,64,Low,Clear,27.6,100
+603,Suburb B,Park,13.16,Motorbike,53.5,Medium,Clear,20.5,110
+604,Airport,Downtown,9.44,Motorbike,36.5,High,Snowy,20,154
+605,City Center,University,5.57,Electric Vehicle,69.2,Medium,Clear,29.9,22
+606,Airport,Train Station,18.87,Petrol Car,57.2,Medium,Rainy,9.4,216
+607,City Center,University,20.84,Diesel Car,51.4,Medium,Clear,22.6,220
+608,Suburb B,Train Station,16.74,Petrol Car,25.8,Medium,Clear,37.2,217.8
+609,Suburb A,Park,6.65,Motorbike,31.5,Low,Rainy,12.5,121
+610,Industrial Zone,University,16.35,Bus,35.4,Medium,Rainy,-1.8,330
+611,Suburb A,Train Station,23.35,Petrol Car,48.1,Medium,Clear,28.5,198
+612,Industrial Zone,Downtown,20.27,Petrol Car,69.4,Low,Clear,-1.8,180
+613,Suburb B,Park,23.73,Bus,25.8,Medium,Clear,3.5,302.5
+614,Airport,Mall,15.11,Diesel Car,53.5,Medium,Rainy,29.5,240
+615,Airport,Downtown,17.51,Motorbike,73,Low,Clear,13.1,100
+616,Suburb B,Mall,14.28,Bus,46.6,Medium,Clear,39.6,275
+617,Suburb B,Downtown,11.48,Motorbike,69.6,Medium,Clear,19.6,110
+618,Industrial Zone,University,23.3,Electric Vehicle,41.6,Medium,Snowy,-5,26
+619,City Center,Downtown,15.7,Bus,28.1,High,Clear,39.3,330
+620,Suburb A,Downtown,2.5,Electric Vehicle,75.1,Medium,Clear,20.7,22
+621,City Center,Park,12.59,Diesel Car,28.3,Medium,Clear,5.5,242
+622,Suburb B,Park,15.12,Bus,75.1,Medium,Rainy,30.7,300
+623,Suburb A,Train Station,20.99,Bus,69.2,Low,Rainy,-3.3,275
+624,Airport,Train Station,3.8,Petrol Car,75.3,Medium,Rainy,14.5,216
+625,City Center,Mall,19.2,Bus,75.7,Medium,Rainy,-2.6,300
+626,Airport,Park,9.34,Bus,29,Medium,Clear,-2.7,302.5
+627,Industrial Zone,Train Station,19.32,Bus,50.3,Low,Clear,12.7,250
+628,Suburb A,Downtown,3.9,Bus,64.7,Medium,Clear,12.9,275
+629,Industrial Zone,Mall,19.53,Motorbike,53.6,Medium,Rainy,3.8,120
+630,Airport,University,7.66,Petrol Car,36,Medium,Rainy,20.9,237.6
+631,City Center,Train Station,11.74,Electric Vehicle,31.4,Medium,Rainy,29.6,26.4
+632,Suburb A,Downtown,16.17,Motorbike,57.4,Medium,Snowy,5.5,130
+633,Suburb B,Mall,19.43,Petrol Car,26.7,Low,Snowy,36.7,237.6
+634,Suburb B,Park,9.9,Petrol Car,38.3,Medium,Clear,28.3,217.8
+635,Suburb A,Mall,14.57,Electric Vehicle,52.9,Medium,Snowy,26.3,26
+636,City Center,Train Station,15.41,Bus,22.6,Low,Clear,30.5,275
+637,Airport,Downtown,3.22,Petrol Car,24,Medium,Rainy,36.1,237.6
+638,Suburb B,Park,2.44,Motorbike,33.9,Medium,Snowy,-0.5,143
+639,Suburb B,Train Station,21.94,Bus,25.3,Low,Snowy,20.2,330
+640,City Center,Park,7.69,Bus,38.3,Medium,Rainy,-4.2,330
+641,Suburb B,Downtown,16.38,Diesel Car,79.8,High,Clear,-2.2,240
+642,Suburb B,Train Station,22.48,Petrol Car,76.6,High,Clear,10.4,216
+643,Industrial Zone,Mall,4.02,Motorbike,51.2,Medium,Rainy,25.9,120
+644,Industrial Zone,Mall,15.18,Motorbike,78.2,High,Clear,19.4,120
+645,Suburb A,Mall,15.36,Diesel Car,71.8,Medium,Rainy,18.6,240
+646,Suburb A,Train Station,24.9,Diesel Car,59.4,Medium,Clear,-1.9,220
+647,Airport,Park,6.24,Diesel Car,63.6,Medium,Rainy,13.6,240
+648,Industrial Zone,Downtown,12.19,Electric Vehicle,29.1,Low,Clear,-3.8,22
+649,Airport,University,8.14,Bus,56.7,Medium,Clear,-3.8,275
+650,City Center,Train Station,5.08,Bus,48.1,Medium,Clear,12.4,275
+651,Industrial Zone,Mall,5.77,Diesel Car,21.9,Medium,Clear,7.1,242
+652,Industrial Zone,Mall,19.07,Diesel Car,65.5,Low,Snowy,39.4,240
+653,Airport,Train Station,17.82,Motorbike,73.3,Medium,Rainy,22.4,120
+654,Industrial Zone,Downtown,11.07,Bus,55.6,Medium,Rainy,30.4,300
+655,Airport,Park,12.39,Petrol Car,72.7,Low,Clear,39.3,180
+656,City Center,University,10.91,Petrol Car,31.4,Medium,Rainy,29.8,237.6
+657,Suburb B,Train Station,5.83,Electric Vehicle,56.8,Low,Clear,1.4,20
+658,Industrial Zone,Park,18.62,Petrol Car,30.8,Medium,Rainy,19.6,237.6
+659,Industrial Zone,Train Station,9.44,Petrol Car,30.7,Medium,Rainy,4.1,237.6
+660,Industrial Zone,Park,7.75,Diesel Car,63.1,Low,Clear,15.2,200
+661,Suburb B,Park,14.05,Motorbike,63.6,High,Rainy,2.2,130
+662,Airport,Train Station,3.01,Diesel Car,74.7,Medium,Rainy,1.8,240
+663,Suburb A,Mall,19.69,Petrol Car,45.2,Medium,Rainy,15.1,216
+664,Suburb A,Park,22.67,Diesel Car,20.2,Medium,Clear,17.4,242
+665,Industrial Zone,University,20.57,Bus,73,Low,Clear,16.4,250
+666,Industrial Zone,Train Station,3.83,Bus,20.4,High,Clear,23.3,330
+667,Suburb A,Park,6.25,Petrol Car,59.2,Low,Rainy,25,198
+668,Airport,Downtown,9.62,Petrol Car,22.9,Medium,Clear,25.2,217.8
+669,Airport,University,15.16,Bus,30.6,Medium,Clear,36.9,302.5
+670,City Center,Downtown,9.42,Motorbike,69.2,Medium,Rainy,-2.1,120
+671,Industrial Zone,Mall,4.81,Electric Vehicle,39.8,Medium,Clear,4.4,24.2
+672,City Center,Park,15.14,Bus,79.2,Medium,Rainy,37,300
+673,Suburb B,Train Station,16,Electric Vehicle,35.6,Medium,Rainy,36.7,26.4
+674,Airport,University,13.42,Motorbike,49.6,Low,Rainy,26.9,110
+675,Suburb A,Park,4.72,Motorbike,57.5,Low,Rainy,31,110
+676,Industrial Zone,Train Station,3.05,Electric Vehicle,53.6,Medium,Clear,4.1,22
+677,Suburb B,Downtown,20.17,Electric Vehicle,38,Medium,Rainy,0.1,26.4
+678,Suburb B,Downtown,11.11,Bus,57,Low,Clear,9.9,250
+679,Suburb B,Train Station,23.07,Petrol Car,58.7,Medium,Rainy,35.1,216
+680,Airport,Downtown,12.64,Motorbike,75.7,Low,Clear,20.4,100
+681,Suburb B,University,14.33,Diesel Car,54.6,Medium,Snowy,30.8,260
+682,City Center,Mall,8.45,Petrol Car,40.3,Medium,Clear,2.5,198
+683,Airport,Train Station,6.31,Petrol Car,71.9,Medium,Rainy,9.2,216
+684,City Center,Downtown,11.52,Motorbike,72.6,Medium,Rainy,8.6,120
+685,Airport,Downtown,6.03,Electric Vehicle,67.1,Medium,Snowy,15,26
+686,City Center,Train Station,22.81,Diesel Car,31.4,High,Rainy,18.6,286
+687,Suburb B,Mall,19.7,Petrol Car,69.3,High,Rainy,1,234
+688,City Center,Train Station,10.91,Bus,27,Medium,Clear,33.2,302.5
+689,City Center,Downtown,12.74,Petrol Car,26.2,Medium,Rainy,-4,237.6
+690,Suburb B,Mall,9.38,Diesel Car,37.2,Medium,Rainy,25.2,264
+691,Suburb B,Mall,5.62,Petrol Car,20.9,Medium,Clear,4.3,217.8
+692,Suburb B,University,9.33,Diesel Car,76.6,High,Clear,2.7,240
+693,Suburb B,University,22.52,Bus,46.6,Low,Clear,25.4,250
+694,City Center,Train Station,3.24,Motorbike,43.5,Medium,Rainy,23.3,120
+695,Industrial Zone,University,10.18,Electric Vehicle,69,Medium,Rainy,19,24
+696,Industrial Zone,University,5.03,Motorbike,25.8,Medium,Rainy,29.5,132
+697,Industrial Zone,Mall,23.79,Diesel Car,71.7,Medium,Snowy,12.6,260
+698,Suburb B,Downtown,12.43,Petrol Car,23.9,Low,Clear,33.1,198
+699,Suburb B,Downtown,15.9,Diesel Car,50.5,Medium,Rainy,-0.2,240
+700,Airport,Park,20.23,Bus,47.7,Medium,Clear,6,275
+701,Suburb A,Train Station,10.83,Electric Vehicle,32.5,Medium,Clear,39.1,24.2
+702,Airport,Downtown,14.52,Diesel Car,30.4,Medium,Rainy,27,264
+703,Industrial Zone,Park,15.62,Motorbike,39.5,Low,Clear,8.9,110
+704,Industrial Zone,Park,15.76,Bus,66.3,Medium,Clear,24.7,275
+705,City Center,Mall,20.79,Bus,74.2,Medium,Clear,1.6,275
+706,Suburb A,Train Station,14.22,Motorbike,56.9,Medium,Clear,34.5,110
+707,Suburb B,University,20.27,Electric Vehicle,75.1,High,Rainy,36.2,26
+708,City Center,University,2.19,Bus,44.3,Low,Clear,11.6,250
+709,Airport,Park,2.02,Bus,69.2,Medium,Rainy,34,300
+710,Suburb A,Train Station,18.15,Motorbike,57.5,Medium,Clear,14.6,110
+711,Suburb A,Mall,12.92,Diesel Car,53.3,High,Clear,13.8,240
+712,Suburb B,Mall,5.09,Petrol Car,58.9,Low,Rainy,24.6,198
+713,Suburb A,Park,5.16,Motorbike,71.6,High,Rainy,36.9,130
+714,Airport,Mall,12.45,Motorbike,53.1,Medium,Clear,3.4,110
+715,Airport,Park,15.29,Diesel Car,62.7,Low,Snowy,20.9,240
+716,City Center,Park,15.07,Electric Vehicle,26.8,Medium,Rainy,1.4,26.4
+717,Airport,Downtown,12.69,Petrol Car,51.4,Medium,Clear,23.4,198
+718,City Center,University,20.36,Electric Vehicle,56.8,High,Clear,-4.5,24
+719,Industrial Zone,University,22.84,Bus,64,Medium,Snowy,30.9,325
+720,Suburb B,Mall,2.81,Bus,65,Medium,Clear,-2.2,275
+721,Industrial Zone,University,5.89,Petrol Car,59.4,Low,Rainy,-3.8,198
+722,Industrial Zone,Park,4.92,Petrol Car,71.1,Low,Clear,7.6,180
+723,Suburb B,Park,19.05,Bus,30.5,Medium,Clear,15.1,302.5
+724,Suburb A,Downtown,20,Diesel Car,49.1,Medium,Rainy,10.4,240
+725,City Center,Mall,15.7,Diesel Car,70.3,Medium,Clear,12.2,220
+726,Industrial Zone,Mall,6.85,Electric Vehicle,23.3,Low,Rainy,-2.6,24.2
+727,Industrial Zone,Train Station,12.95,Motorbike,64.8,Medium,Clear,12.1,110
+728,Industrial Zone,Train Station,8.04,Bus,72.2,Low,Snowy,15.2,300
+729,Suburb B,University,17.71,Petrol Car,25.8,Medium,Clear,33,217.8
+730,Airport,Downtown,9.7,Electric Vehicle,68.1,Low,Clear,15.7,20
+731,Suburb A,University,19.72,Bus,40.2,Medium,Clear,19.6,275
+732,City Center,Park,2.28,Petrol Car,51.5,Medium,Clear,27.6,198
+733,Suburb B,Mall,2.78,Bus,25.5,High,Rainy,32.6,357.5
+734,Airport,Park,18.29,Petrol Car,25.2,Medium,Clear,29.4,217.8
+735,Airport,Mall,22.61,Diesel Car,35.2,Medium,Snowy,23.7,286
+736,Suburb B,Train Station,17.92,Electric Vehicle,35.4,Medium,Clear,-2.2,24.2
+737,Industrial Zone,Downtown,24.91,Electric Vehicle,77.3,Low,Clear,17.1,20
+738,Suburb A,University,11.03,Motorbike,26.5,Medium,Clear,22.6,121
+739,City Center,Train Station,18.45,Petrol Car,22.1,Low,Rainy,30,217.8
+740,City Center,Train Station,5.42,Petrol Car,76,Medium,Clear,26.5,198
+741,Industrial Zone,University,2.09,Motorbike,48.7,Medium,Rainy,31.6,120
+742,City Center,University,7.19,Motorbike,77.2,High,Clear,20.5,120
+743,Suburb B,Downtown,17.68,Motorbike,23.3,High,Rainy,11.4,143
+744,Suburb B,Park,21.35,Electric Vehicle,58.9,Low,Clear,12.3,20
+745,Suburb A,Downtown,18.01,Petrol Car,57.8,Medium,Clear,23.5,198
+746,Suburb A,Mall,2.82,Petrol Car,63.2,Medium,Clear,-2.2,198
+747,Airport,Downtown,13.49,Motorbike,78,Low,Clear,10.2,100
+748,City Center,Train Station,4.72,Bus,47.5,Medium,Rainy,1.7,300
+749,Airport,Mall,23.27,Petrol Car,64.1,Medium,Clear,35.8,198
+750,Airport,Park,7.58,Diesel Car,20.9,Medium,Snowy,31.9,286
+751,City Center,Train Station,16.06,Bus,23.8,High,Clear,21.8,330
+752,Airport,Mall,3.45,Diesel Car,45.6,High,Snowy,25.5,280
+753,Suburb B,Park,24.44,Bus,52.8,Medium,Snowy,4.6,325
+754,City Center,University,5.99,Petrol Car,27.2,Low,Clear,26.3,198
+755,Airport,Mall,12.09,Bus,22.4,Low,Rainy,22.6,302.5
+756,Suburb A,Park,22.23,Petrol Car,20.4,Low,Clear,24.3,198
+757,Suburb B,Train Station,17.95,Motorbike,61.5,Low,Rainy,18.5,110
+758,Industrial Zone,Mall,23.58,Bus,61.5,Medium,Rainy,22.5,300
+759,City Center,Downtown,10,Petrol Car,53.5,Low,Snowy,39,216
+760,Airport,Downtown,21.84,Bus,50.5,Medium,Rainy,4.4,300
+761,City Center,Mall,4.59,Diesel Car,61.1,High,Clear,2.9,240
+762,City Center,Park,16.83,Electric Vehicle,32.6,Low,Rainy,35.1,24.2
+763,Industrial Zone,Park,4.4,Petrol Car,75.5,Low,Rainy,16.8,198
+764,City Center,Park,22.59,Motorbike,55.6,Medium,Clear,25.5,110
+765,Suburb B,Mall,19.92,Electric Vehicle,33.7,Low,Clear,4,22
+766,Suburb A,Park,12.83,Motorbike,23.3,Medium,Clear,22.4,121
+767,Suburb A,Train Station,10.59,Motorbike,63.2,Medium,Snowy,4.1,130
+768,Suburb A,Park,17.92,Petrol Car,36.8,Low,Clear,13.8,198
+769,Suburb B,Mall,22.39,Bus,29.4,Medium,Snowy,35.8,357.5
+770,Airport,University,21.67,Petrol Car,44.7,Medium,Rainy,4.7,216
+771,Industrial Zone,Train Station,8.42,Motorbike,64.2,Low,Clear,21.1,100
+772,Airport,Mall,23.02,Petrol Car,45.1,Low,Snowy,28,216
+773,Airport,Park,11.79,Motorbike,48.8,Medium,Rainy,15.4,120
+774,Suburb A,Park,14.85,Petrol Car,61.6,Medium,Clear,11.1,198
+775,Suburb A,Park,2.37,Electric Vehicle,29.7,Medium,Clear,21.3,24.2
+776,Industrial Zone,Train Station,19.75,Motorbike,31.1,High,Rainy,26.7,143
+777,City Center,Park,10.85,Electric Vehicle,51.9,Low,Rainy,26.4,22
+778,Airport,University,15.23,Diesel Car,67.3,Low,Rainy,28.1,220
+779,City Center,University,23.74,Electric Vehicle,73.3,Low,Clear,22.9,20
+780,Suburb B,Downtown,6.03,Bus,62.3,Medium,Rainy,1.2,300
+781,Suburb B,Mall,14.41,Motorbike,64.2,Medium,Rainy,26.6,120
+782,Suburb A,Downtown,10.11,Electric Vehicle,50.2,Medium,Clear,11.8,22
+783,Industrial Zone,Train Station,13.53,Petrol Car,48.2,Medium,Rainy,35.5,216
+784,Industrial Zone,University,10.47,Petrol Car,31.3,High,Clear,12.6,237.6
+785,Suburb A,Downtown,24.04,Petrol Car,26.6,Low,Rainy,17.3,217.8
+786,Suburb A,University,23.9,Petrol Car,37.6,High,Clear,0.9,237.6
+787,Suburb B,Train Station,12.21,Petrol Car,37.5,Low,Rainy,5.5,217.8
+788,Airport,Downtown,11.47,Electric Vehicle,59.3,Medium,Clear,25,22
+789,Airport,University,12.24,Electric Vehicle,54,High,Clear,30.5,24
+790,Suburb A,Train Station,10.55,Electric Vehicle,66.2,Low,Clear,15.5,20
+791,Suburb A,University,23.26,Bus,37.1,High,Rainy,26.2,357.5
+792,Suburb A,Mall,7.47,Petrol Car,79.6,Medium,Clear,11.6,198
+793,Suburb A,University,18.26,Electric Vehicle,78.7,Low,Clear,38.9,20
+794,Airport,Downtown,4.79,Petrol Car,44.3,Medium,Clear,15.6,198
+795,Suburb B,Mall,2.1,Bus,78.5,Medium,Rainy,16.3,300
+796,Suburb B,University,17.34,Bus,63.7,High,Clear,0.1,300
+797,Industrial Zone,Park,5.21,Bus,27,Low,Rainy,4.9,302.5
+798,Suburb B,Park,9.51,Bus,58.5,Medium,Clear,37.1,275
+799,Suburb B,Mall,2.52,Bus,71,Medium,Snowy,38.9,325
+800,Industrial Zone,Mall,13.28,Bus,56.3,High,Snowy,11.2,350
+801,Suburb A,Train Station,10.5,Electric Vehicle,20.7,Medium,Clear,15.1,24.2
+802,Airport,Park,6.96,Motorbike,64.5,Medium,Clear,2.4,110
+803,Industrial Zone,Train Station,5.21,Bus,55.9,Low,Clear,39.5,250
+804,Airport,Downtown,3.52,Bus,65.4,Low,Clear,36.1,250
+805,Industrial Zone,Mall,14.78,Bus,65.3,Low,Clear,12.2,250
+806,Airport,Train Station,2.97,Electric Vehicle,70.1,Medium,Clear,15.9,22
+807,City Center,Park,5.54,Electric Vehicle,77.4,High,Clear,24.4,24
+808,Suburb B,Train Station,6.13,Diesel Car,21.7,Medium,Clear,38.7,242
+809,Airport,Downtown,15.36,Bus,46.2,Low,Rainy,38.8,275
+810,City Center,Downtown,13.79,Bus,21.1,Low,Clear,1.6,275
+811,Industrial Zone,Mall,10.22,Petrol Car,36.4,Medium,Snowy,11,257.4
+812,Suburb B,Downtown,14.18,Petrol Car,50.8,Medium,Clear,-0.7,198
+813,Suburb A,University,9.42,Electric Vehicle,69.6,Medium,Clear,25.8,22
+814,Suburb B,Park,14.29,Electric Vehicle,69.4,Low,Clear,11.8,20
+815,Industrial Zone,Train Station,9.83,Diesel Car,26.1,Low,Clear,3.5,220
+816,Airport,University,17.86,Bus,70.8,Medium,Rainy,31.1,300
+817,Industrial Zone,Train Station,23.07,Petrol Car,69.1,High,Clear,9,216
+818,Suburb B,Mall,20.79,Bus,51.4,High,Clear,8.7,300
+819,City Center,Mall,4.96,Diesel Car,61.3,Medium,Clear,39.1,220
+820,Industrial Zone,Park,3.79,Motorbike,65.4,Low,Clear,30.7,100
+821,Airport,University,3.36,Petrol Car,74.5,Low,Clear,-4.5,180
+822,City Center,Park,23.16,Diesel Car,55.3,Low,Rainy,-3.7,220
+823,Suburb A,Downtown,23.82,Electric Vehicle,41.1,High,Rainy,22.6,26
+824,Airport,University,3.57,Bus,65.8,Medium,Rainy,38.4,300
+825,Suburb A,University,2.1,Petrol Car,75.5,High,Rainy,16.4,234
+826,Airport,Mall,12.11,Petrol Car,30.9,Medium,Clear,4.6,217.8
+827,Suburb A,Train Station,4.6,Electric Vehicle,27.4,Low,Clear,29.3,22
+828,Suburb B,University,18.61,Petrol Car,39.7,Low,Clear,22,198
+829,Suburb B,Train Station,7.2,Motorbike,37.4,High,Clear,-1.9,132
+830,Industrial Zone,Downtown,6.12,Motorbike,60.3,Medium,Clear,25.4,110
+831,City Center,Mall,11.08,Bus,78.7,Medium,Rainy,2.6,300
+832,Suburb B,Mall,9.79,Bus,70.6,Medium,Clear,14.1,275
+833,Industrial Zone,Downtown,19.59,Bus,55.6,Medium,Rainy,37.4,300
+834,Suburb B,Train Station,17.33,Motorbike,79.3,Medium,Clear,15.5,110
+835,City Center,Downtown,13.25,Diesel Car,57.7,Low,Clear,-2.6,200
+836,City Center,Train Station,17.6,Diesel Car,43,Medium,Clear,23,220
+837,City Center,Park,17.2,Bus,66.1,Medium,Clear,24.8,275
+838,Industrial Zone,University,8.02,Electric Vehicle,68.6,Medium,Clear,29.4,22
+839,Industrial Zone,Park,10.82,Electric Vehicle,71.2,Medium,Clear,3,22
+840,Suburb B,Mall,13.3,Diesel Car,38.7,Medium,Rainy,20.6,264
+841,Industrial Zone,University,17.76,Bus,48.2,Medium,Clear,-2.5,275
+842,Suburb B,Train Station,15.59,Motorbike,57,Medium,Snowy,9.4,130
+843,City Center,University,3.04,Electric Vehicle,40.9,Medium,Clear,35.1,22
+844,Suburb B,Train Station,4.24,Electric Vehicle,79.5,Medium,Clear,6,22
+845,Suburb A,Downtown,15.63,Petrol Car,72.1,Low,Clear,19.2,180
+846,City Center,Train Station,17.13,Motorbike,54.1,High,Clear,26.3,120
+847,Airport,Park,24.67,Motorbike,54.2,Medium,Clear,17,110
+848,Suburb A,Downtown,13.42,Electric Vehicle,30,Low,Snowy,4.1,26.4
+849,City Center,University,6.92,Electric Vehicle,22.9,High,Clear,5.2,26.4
+850,City Center,University,4.18,Electric Vehicle,36.4,Medium,Clear,14.2,24.2
+851,Suburb B,Park,16.99,Electric Vehicle,50.3,Low,Rainy,9.1,22
+852,Industrial Zone,Train Station,7.78,Bus,47.2,Medium,Clear,-4.2,275
+853,Airport,Mall,15.27,Diesel Car,59.6,High,Snowy,7.1,280
+854,Airport,University,21.61,Motorbike,76.1,Medium,Clear,4,110
+855,Industrial Zone,Mall,7.53,Electric Vehicle,70.6,Medium,Rainy,36,24
+856,Suburb A,Train Station,8.14,Electric Vehicle,58.8,Low,Rainy,13.3,22
+857,City Center,Mall,6.41,Diesel Car,67.8,Medium,Clear,39.6,220
+858,Industrial Zone,Park,6.65,Electric Vehicle,28.2,Low,Rainy,24.6,24.2
+859,Suburb A,Park,24.17,Motorbike,66.9,Low,Rainy,9.1,110
+860,Suburb B,Park,22.71,Motorbike,73.8,Medium,Rainy,12.9,120
+861,Suburb A,Mall,4.57,Bus,76,Medium,Rainy,37.7,300
+862,Airport,Downtown,13.42,Petrol Car,34.3,Low,Rainy,9.8,217.8
+863,Airport,Train Station,20.53,Diesel Car,76.1,Low,Clear,4.6,200
+864,Suburb B,Train Station,11.39,Bus,23.4,Medium,Rainy,0.1,330
+865,Airport,Train Station,12.92,Diesel Car,77.8,High,Snowy,11.3,280
+866,Suburb B,Downtown,2.48,Bus,22.1,Medium,Rainy,-2.5,330
+867,Suburb A,Downtown,14.71,Electric Vehicle,58.3,Medium,Snowy,25.8,26
+868,Airport,Mall,21.73,Motorbike,20.5,High,Snowy,36.3,154
+869,Suburb B,Park,23.54,Diesel Car,37.8,High,Clear,14.7,264
+870,Suburb B,Train Station,20.15,Electric Vehicle,72,High,Snowy,16.2,28
+871,Industrial Zone,Downtown,18.5,Petrol Car,69.5,Medium,Clear,10.8,198
+872,Airport,University,18.97,Motorbike,61.7,Medium,Rainy,3.3,120
+873,Industrial Zone,Mall,2.07,Diesel Car,57.7,Medium,Clear,2.1,220
+874,Airport,Mall,21.48,Motorbike,67.6,Medium,Clear,28.1,110
+875,Suburb B,Mall,17.81,Electric Vehicle,68,Low,Clear,3.2,20
+876,Industrial Zone,University,7.16,Petrol Car,75.4,Medium,Rainy,35.8,216
+877,Industrial Zone,Mall,8.02,Diesel Car,23,Medium,Rainy,1.7,264
+878,Suburb B,Mall,23.79,Petrol Car,20.8,Medium,Rainy,36.8,237.6
+879,Industrial Zone,Park,7.16,Diesel Car,31.4,High,Rainy,8,286
+880,Industrial Zone,Train Station,4.99,Diesel Car,56,High,Clear,25.5,240
+881,Industrial Zone,Mall,11.4,Diesel Car,21.7,High,Clear,15.3,264
+882,Suburb A,Downtown,15.41,Motorbike,25.1,Medium,Rainy,38.8,132
+883,Industrial Zone,Mall,18.41,Motorbike,64.2,Low,Clear,-2.4,100
+884,Suburb B,Mall,12.83,Electric Vehicle,79.8,High,Snowy,21.9,28
+885,City Center,Park,7.83,Bus,42.9,High,Rainy,1,325
+886,Airport,Park,15.35,Electric Vehicle,30.2,Medium,Clear,16.1,24.2
+887,City Center,Downtown,18.34,Motorbike,28.5,Low,Clear,0.8,110
+888,Suburb B,Downtown,23.3,Electric Vehicle,74.2,Low,Rainy,36.7,22
+889,Airport,Downtown,12.02,Diesel Car,38.9,High,Rainy,1.8,286
+890,Industrial Zone,Park,6.35,Petrol Car,33.8,Low,Clear,26.8,198
+891,Industrial Zone,Park,24.89,Motorbike,22.4,Medium,Rainy,16.8,132
+892,Industrial Zone,Park,21.45,Diesel Car,27.4,Low,Rainy,3.1,242
+893,Suburb A,University,20.92,Bus,73.5,Medium,Clear,38.7,275
+894,Airport,University,6.15,Petrol Car,34.8,Medium,Clear,9.8,217.8
+895,Suburb B,Park,11.07,Bus,75.7,Low,Clear,-3.7,250
+896,Industrial Zone,Train Station,12.44,Electric Vehicle,55.7,Low,Snowy,24.5,24
+897,Industrial Zone,Downtown,23.79,Bus,27.8,High,Rainy,7.7,357.5
+898,City Center,Park,14.58,Bus,42.9,Medium,Clear,38.4,275
+899,Industrial Zone,Park,2.47,Diesel Car,29.8,Medium,Clear,28.9,242
+900,Suburb A,Park,8.87,Motorbike,64.2,High,Snowy,22.2,140
+901,Suburb B,Park,21.14,Bus,32,Medium,Clear,7.1,302.5
+902,Airport,Train Station,4.08,Motorbike,68.7,Medium,Clear,14.2,110
+903,City Center,University,9.86,Motorbike,60.6,Medium,Rainy,36.9,120
+904,Airport,University,3.93,Motorbike,46.2,High,Clear,1.7,120
+905,Suburb A,Downtown,21.36,Bus,45.7,Medium,Clear,36.3,275
+906,Airport,Park,13.74,Motorbike,25.7,Medium,Clear,6.4,121
+907,Suburb B,University,3.88,Bus,21,Medium,Clear,30.4,302.5
+908,Industrial Zone,Park,3.92,Electric Vehicle,38.8,Medium,Rainy,15.2,26.4
+909,Suburb B,Downtown,24.23,Diesel Car,32.7,Low,Snowy,6.7,264
+910,City Center,Train Station,14.29,Petrol Car,43.7,Low,Rainy,15.7,198
+911,Industrial Zone,University,18.7,Electric Vehicle,57.1,High,Clear,25.3,24
+912,Industrial Zone,Downtown,4.02,Diesel Car,20.8,Low,Clear,38.7,220
+913,City Center,Mall,13.07,Diesel Car,59,Medium,Rainy,30.6,240
+914,Suburb A,Park,8.92,Motorbike,28.9,Medium,Clear,35.6,121
+915,Industrial Zone,Train Station,12.84,Motorbike,55.1,Low,Clear,32.5,100
+916,City Center,Downtown,2.18,Motorbike,78.8,High,Rainy,21.8,130
+917,Airport,Downtown,2.85,Motorbike,49.2,Medium,Rainy,25.5,120
+918,Industrial Zone,Mall,18.43,Bus,21.1,Medium,Clear,7.1,302.5
+919,Industrial Zone,Train Station,4.69,Bus,76.3,Medium,Rainy,-4.1,300
+920,Suburb B,Mall,12.79,Motorbike,33.9,Low,Snowy,10.3,132
+921,Airport,Train Station,5.02,Electric Vehicle,63.4,Medium,Clear,37.4,22
+922,Suburb B,Train Station,20.39,Diesel Car,57.3,Low,Rainy,25,220
+923,Suburb A,Mall,6.59,Bus,49.5,Medium,Snowy,17.2,325
+924,Suburb A,Mall,14.81,Petrol Car,41.5,Low,Rainy,2.9,198
+925,Airport,Park,20.56,Electric Vehicle,45.8,Medium,Clear,5.1,22
+926,Suburb B,Downtown,20.05,Petrol Car,66.2,Medium,Rainy,33.4,216
+927,Airport,University,17.4,Petrol Car,75.6,Medium,Clear,32.9,198
+928,City Center,Park,19.98,Bus,66.9,High,Rainy,-3.1,325
+929,City Center,Mall,16.49,Diesel Car,74.7,Low,Clear,14.9,200
+930,Airport,Train Station,18.85,Petrol Car,29.3,Medium,Rainy,0.5,237.6
+931,Suburb A,Train Station,24.3,Petrol Car,34.7,High,Clear,17.7,237.6
+932,City Center,Downtown,10.57,Motorbike,41.6,Medium,Clear,28.9,110
+933,Industrial Zone,Mall,5.17,Motorbike,44.8,Medium,Clear,33.4,110
+934,Suburb B,Park,12.18,Petrol Car,63.1,Medium,Clear,10.2,198
+935,Industrial Zone,Mall,11.98,Motorbike,65.6,Medium,Rainy,35.6,120
+936,City Center,University,24.37,Motorbike,44.1,Medium,Clear,8.7,110
+937,Suburb B,Downtown,2.18,Electric Vehicle,74,Medium,Clear,13.2,22
+938,Suburb A,University,16.36,Bus,59.1,Medium,Rainy,30.2,300
+939,Industrial Zone,Mall,22.26,Petrol Car,22.2,Medium,Rainy,28.3,237.6
+940,Suburb A,University,24.81,Electric Vehicle,32.8,Medium,Clear,10.3,24.2
+941,Suburb A,Park,2.64,Bus,55.6,Low,Rainy,27.7,275
+942,Airport,Park,18.84,Electric Vehicle,35.6,Medium,Clear,29,24.2
+943,City Center,Train Station,8.85,Petrol Car,47.2,High,Rainy,39.5,234
+944,Airport,University,21.42,Diesel Car,41,Low,Rainy,27.2,220
+945,Suburb A,Train Station,13.95,Diesel Car,26.3,Medium,Clear,30,242
+946,Industrial Zone,Park,5.37,Motorbike,69.7,Low,Clear,35,100
+947,Industrial Zone,Mall,12.26,Electric Vehicle,60.6,Medium,Clear,30,22
+948,Suburb B,University,13.47,Motorbike,79.8,Medium,Snowy,27.9,130
+949,Industrial Zone,Mall,5.32,Diesel Car,49.1,Medium,Snowy,18.1,260
+950,Airport,Park,17.97,Motorbike,48.4,Medium,Snowy,11.6,130
+951,City Center,University,21.6,Petrol Car,27.3,Medium,Clear,1.9,217.8
+952,Suburb B,Downtown,24.79,Electric Vehicle,37.6,Low,Clear,30.3,22
+953,Industrial Zone,Park,23.55,Electric Vehicle,73.3,Low,Rainy,17,22
+954,City Center,University,10.02,Petrol Car,45.1,Medium,Clear,35.5,198
+955,Industrial Zone,Train Station,21.19,Bus,28,Low,Rainy,29.3,302.5
+956,Industrial Zone,Mall,21.93,Electric Vehicle,25.4,Medium,Rainy,12.4,26.4
+957,Industrial Zone,Downtown,14.44,Motorbike,64.2,Medium,Rainy,26.8,120
+958,Airport,Downtown,14.9,Petrol Car,58.6,Low,Snowy,19.4,216
+959,City Center,University,14,Motorbike,50.2,Low,Rainy,18.9,110
+960,City Center,Downtown,20.1,Diesel Car,69.8,High,Clear,-1.2,240
+961,Airport,University,9.37,Bus,22.7,High,Clear,14.7,330
+962,Industrial Zone,Park,21.77,Electric Vehicle,42.9,Low,Snowy,19.4,24
+963,Suburb B,Mall,6.2,Petrol Car,29.3,High,Rainy,-2.3,257.4
+964,Suburb B,Mall,2.62,Petrol Car,37.9,Low,Clear,35.2,198
+965,Suburb B,Train Station,23.66,Petrol Car,23.1,Low,Clear,5.6,198
+966,Airport,University,10.86,Petrol Car,36.2,Medium,Clear,-2.1,217.8
+967,City Center,Train Station,16.57,Petrol Car,36.1,High,Rainy,6.1,257.4
+968,Airport,Mall,9.01,Motorbike,46.8,High,Clear,30.2,120
+969,Suburb A,Downtown,14.43,Diesel Car,66.9,Medium,Clear,36,220
+970,Industrial Zone,Park,2.02,Motorbike,77.7,Medium,Rainy,2.5,120
+971,City Center,Train Station,8.29,Electric Vehicle,70.4,Medium,Clear,23.4,22
+972,Airport,University,8.47,Diesel Car,64.4,Medium,Clear,12.8,220
+973,City Center,Mall,18.68,Electric Vehicle,72.7,Low,Clear,31.1,20
+974,Suburb B,Downtown,24.53,Motorbike,36.4,Medium,Clear,4.5,121
+975,Airport,Downtown,2.37,Diesel Car,58.8,Low,Clear,35.6,200
+976,Suburb A,Train Station,14.78,Motorbike,65.7,Medium,Rainy,24.2,120
+977,City Center,University,2.71,Motorbike,60.3,Medium,Rainy,32.2,120
+978,Suburb B,Train Station,6.08,Petrol Car,27.5,Medium,Clear,-4.6,217.8
+979,City Center,Downtown,17.65,Electric Vehicle,31.5,High,Rainy,31.4,28.6
+980,Suburb A,Mall,24.54,Electric Vehicle,22.2,Medium,Rainy,22.3,26.4
+981,City Center,Mall,24.64,Motorbike,26.7,Low,Clear,2.7,110
+982,Suburb A,University,17.46,Bus,53.9,Low,Clear,-2.1,250
+983,Suburb B,University,21.68,Bus,63.7,Low,Rainy,-4,275
+984,Airport,University,7.82,Bus,73,Low,Clear,25.3,250
+985,City Center,Downtown,11.95,Motorbike,36.4,Medium,Clear,11.3,121
+986,City Center,Mall,3.08,Motorbike,51.9,Medium,Clear,10.1,110
+987,Airport,Park,24.78,Diesel Car,78.7,Medium,Clear,6.2,220
+988,Suburb A,Downtown,9.15,Petrol Car,21.7,Medium,Clear,30.9,217.8
+989,Suburb B,Downtown,7.68,Motorbike,34.3,Medium,Clear,10,121
+990,Suburb A,Park,19.84,Bus,46.3,Low,Clear,0.6,250
+991,City Center,Park,10.68,Petrol Car,67,Low,Rainy,-2.5,198
+992,Airport,Train Station,3.51,Petrol Car,53.6,Low,Clear,-0.7,180
+993,Industrial Zone,Mall,21.89,Bus,20.6,Medium,Rainy,34.6,330
+994,Airport,Park,9.81,Petrol Car,47.2,Medium,Clear,-0.4,198
+995,Airport,Park,15.64,Diesel Car,74.3,Low,Clear,11,200
+996,Industrial Zone,University,12.23,Diesel Car,28.3,Low,Clear,21.3,220
+997,Airport,Downtown,9.16,Bus,66.5,Low,Clear,10.4,250
+998,Suburb B,Park,13.91,Diesel Car,23.4,Medium,Rainy,33.6,264
+999,Industrial Zone,Downtown,6.49,Diesel Car,58.4,Low,Clear,3.5,200
+1000,Industrial Zone,Train Station,15.79,Electric Vehicle,71.1,Medium,Clear,8.5,22
