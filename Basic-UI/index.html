@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenRoute - Carbon Optimized Travel Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 GreenRoute</h1>
+    <p>Your Carbon-Optimized Travel Planner</p>
+
+    <form id="routeForm">
+      <label for="origin">Start Location:</label>
+      <input type="text" id="origin" name="origin" placeholder="e.g., New York City" required>
+
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" placeholder="e.g., Boston" required>
+
+      <label for="transport">Mode of Transport:</label>
+      <select id="transport" name="transport">
+        <option value="car">Car</option>
+        <option value="bus">Bus</option>
+        <option value="bike">Bike</option>
+        <option value="walk">Walk</option>
+        <option value="train">Train</option>
+      </select>
+
+      <label for="fuel">Vehicle Type (if applicable):</label>
+      <select id="fuel" name="fuel">
+        <option value="none">Not Applicable</option>
+        <option value="petrol">Petrol</option>
+        <option value="diesel">Diesel</option>
+        <option value="electric">Electric</option>
+      </select>
+
+      <button type="submit">Find Green Route</button>
+    </form>
+
+    <div class="result">
+      <h3>Route Information</h3>
+      <p id="routeOutput">Enter route details to calculate carbon-optimized path.</p>
+    </div>
+  </div>
+</body>
+</html>
