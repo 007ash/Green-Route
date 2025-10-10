@@ -7,7 +7,6 @@ import pickle
 def load_model():
     return joblib.load("model/model_pipeline.pkl")
 
-
 @st.cache_data
 def load_pickles():
     with open("model/origins.pkl", "rb") as f:
