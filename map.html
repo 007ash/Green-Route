@@ -1,274 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Coimbatore Smart Router</title>
+    <title>Coimbatore Route Finder</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
-    
+
     <style>
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        
-        #map { height: 100vh; width: 100%; z-index: 1; }
-
-        #form-container {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-            background: white;
-            padding: 20px;
-            width: 320px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        h3 { margin-top: 0; color: #333; margin-bottom: 15px; }
-
-        .input-group { margin-bottom: 15px; position: relative; } /* Relative for positioning the list */
-        
-        label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; }
-        
-        input, select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        /* Styles for the Autocomplete List */
-        .suggestions-list {
-            position: absolute;
-            top: 100%; /* Right below the input */
-            left: 0;
-            right: 0;
-            background: white;
-            border: 1px solid #ccc;
-            border-top: none;
-            max-height: 150px;
-            overflow-y: auto;
-            z-index: 1001;
-            display: none; /* Hidden by default */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .suggestions-list div {
-            padding: 10px;
-            cursor: pointer;
-            font-size: 13px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .suggestions-list div:hover {
-            background-color: #f0f0f0;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        button:hover { background-color: #218838; }
-        #status { margin-top: 10px; font-size: 13px; color: #666; text-align: center;}
+        body { margin: 0; padding: 0; }
+        #map { height: 100vh; width: 100%; }
     </style>
 </head>
 <body>
-
-    <div id="form-container">
-        <h3>Find Your Route</h3>
-        
-        <div class="input-group">
-            <label>Source</label>
-            <input type="text" id="start" placeholder="Type to search..." autocomplete="off" oninput="handleInput(this, 'start-list')">
-            <div id="start-list" class="suggestions-list"></div>
-        </div>
-
-        <div class="input-group">
-            <label>Destination</label>
-            <input type="text" id="end" placeholder="Type to search..." autocomplete="off" oninput="handleInput(this, 'end-list')">
-            <div id="end-list" class="suggestions-list"></div>
-        </div>
-
-        <div class="input-group">
-            <label>Vehicle Type</label>
-            <select id="vehicle">
-                <option value="car">Car</option>
-                <option value="bike">Bike</option>
-                <option value="foot">Walking</option>
-            </select>
-        </div>
-
-        <button onclick="calculateRoute()">Navigate</button>
-        <div id="status"></div>
-    </div>
 
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
 
     <script>
-        // --- 1. Map Initialization ---
+        // 1. Initialize the map centered on Coimbatore
+        // Coordinates: [Latitude, Longitude]
         var map = L.map('map').setView([11.0168, 76.9558], 13);
+
+        // 2. Add the OpenStreetMap tiles (The visual map images)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors'
         }).addTo(map);
 
-        var routingControl = null;
-        var debounceTimer = null;
+        // 3. Add the Routing Control
+        // By default, this uses the OSRM public demo server (Free!)
+        var control = L.Routing.control({
+            waypoints: [
+                L.latLng(11.0168, 76.9558), // Start: Center of Coimbatore (Gandhipuram area)
+                L.latLng(11.0014, 76.9628)  // End: Railway Station area
+            ],
+            routeWhileDragging: true, // Recalculate route if you drag the blue line
+            geocoder: L.Control.Geocoder // Optional: Would add a search box (requires another plugin)
+        }).addTo(map);
 
-        // Use standard Nominatim (OpenStreetMap Search)
-        var geocoder = L.Control.Geocoder.nominatim({
-            geocodingQueryParams: {
-                'accept-language': 'en', // Force English results
-                countrycodes: 'in',      // Limit to India
-                viewbox: '76.8,10.8,77.1,11.2', // Bias towards Coimbatore
-                bounded: 1
-            }
-        });
+        // 4. Handle clicks to set new waypoints
+        // This lets you click anywhere on the map to change the route
+        map.on('click', function(e) {
+            var container = L.DomUtil.create('div'),
+                startBtn = createButton('Start Here', container),
+                destBtn = createButton('End Here', container);
 
-        // --- 2. Autocomplete Logic ---
-        function handleInput(inputElement, listId) {
-            var query = inputElement.value;
-            var list = document.getElementById(listId);
+            L.popup()
+                .setContent(container)
+                .setLatLng(e.latlng)
+                .openOn(map);
 
-            if (query.length < 3) {
-                list.style.display = 'none';
-                return;
-            }
-
-            clearTimeout(debounceTimer);
-
-            debounceTimer = setTimeout(function() {
-                // Add console log to check if search is firing
-                console.log("Searching for:", query);
-                
-                geocoder.geocode(query, function(results) {
-                    list.innerHTML = '';
-                    
-                    if (results && results.length > 0) {
-                        list.style.display = 'block';
-                        results.slice(0, 5).forEach(function(result) {
-                            var div = document.createElement('div');
-                            // Show only the first part of address for cleaner UI
-                            var shortName = result.name.split(',')[0]; 
-                            div.innerHTML = "<b>" + shortName + "</b><br><small>" + result.html + "</small>";
-                            
-                            div.onclick = function() {
-                                inputElement.value = result.name; // Keep full name for routing
-                                list.style.display = 'none';
-                            };
-                            list.appendChild(div);
-                        });
-                    } else {
-                        list.style.display = 'none';
-                    }
-                });
-            }, 800); // Increased delay to 800ms to be nicer to the server
-        }
-
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.input-group')) {
-                document.getElementById('start-list').style.display = 'none';
-                document.getElementById('end-list').style.display = 'none';
-            }
-        });
-
-        // --- 3. Routing Logic with ERROR HANDLING ---
-        function calculateRoute() {
-            var startText = document.getElementById('start').value;
-            var endText = document.getElementById('end').value;
-            var mode = document.getElementById('vehicle').value;
-            var statusDiv = document.getElementById('status');
-
-            if(!startText || !endText) {
-                alert("Please enter both locations!");
-                return;
-            }
-
-            statusDiv.innerHTML = "Locating points...";
-            statusDiv.style.color = "blue";
-
-            // Step A: Find Coordinates for Start
-            geocoder.geocode(startText, function(startResults) {
-                if (!startResults || startResults.length === 0) { 
-                    statusDiv.innerHTML = "❌ Start location not found.";
-                    statusDiv.style.color = "red";
-                    return; 
-                }
-                
-                // Step B: Find Coordinates for End
-                geocoder.geocode(endText, function(endResults) {
-                    if (!endResults || endResults.length === 0) { 
-                        statusDiv.innerHTML = "❌ Destination not found."; 
-                        statusDiv.style.color = "red";
-                        return; 
-                    }
-
-                    statusDiv.innerHTML = "Calculating Route...";
-
-                    if (routingControl) map.removeControl(routingControl);
-
-                    // Map OSRM profiles
-                    var profile = 'driving';
-                    if(mode === 'bike') profile = 'cycling';
-                    if(mode === 'foot') profile = 'walking';
-
-                    try {
-                        routingControl = L.Routing.control({
-                            waypoints: [
-                                startResults[0].center,
-                                endResults[0].center
-                            ],
-                            router: L.Routing.osrmv1({
-                                serviceUrl: 'https://router.project-osrm.org/route/v1', // Main OSRM Server
-                                profile: profile
-                            }),
-                            lineOptions: {
-                                styles: [{color: mode === 'bike' ? 'red' : 'blue', opacity: 0.7, weight: 6}]
-                            },
-                            createMarker: function(i, wp, nWps) {
-                                return L.marker(wp.latLng).bindPopup(i === 0 ? "Start" : "End");
-                            },
-                            addWaypoints: false,
-                            draggableWaypoints: false,
-                            fitSelectedRoutes: true
-                        })
-                        .on('routesfound', function(e) {
-                            var routes = e.routes;
-                            var summary = routes[0].summary;
-                            // Convert seconds to minutes
-                            var timeMins = Math.round(summary.totalTime / 60);
-                            // Convert meters to km
-                            var distKm = (summary.totalDistance / 1000).toFixed(1);
-                            
-                            statusDiv.innerHTML = "✅ <b>" + timeMins + " min</b> (" + distKm + " km)";
-                            statusDiv.style.color = "green";
-                        })
-                        .on('routingerror', function(e) {
-                            console.error("Routing Error:", e);
-                            statusDiv.innerHTML = "❌ Server Busy. Try again in 1 min.";
-                            statusDiv.style.color = "red";
-                        })
-                        .addTo(map);
-                    } catch (error) {
-                        console.error(error);
-                        statusDiv.innerHTML = "❌ Application Error";
-                    }
-                });
+            L.DomEvent.on(startBtn, 'click', function() {
+                control.spliceWaypoints(0, 1, e.latlng);
+                map.closePopup();
             });
+
+            L.DomEvent.on(destBtn, 'click', function() {
+                control.spliceWaypoints(control.getWaypoints().length - 1, 1, e.latlng);
+                map.closePopup();
+            });
+        });
+
+        function createButton(label, container) {
+            var btn = L.DomUtil.create('button', '', container);
+            btn.setAttribute('type', 'button');
+            btn.innerHTML = label;
+            return btn;
         }
+
     </script>
 </body>
 </html>
