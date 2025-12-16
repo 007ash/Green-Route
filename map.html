@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coimbatore Route Finder</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { height: 100vh; width: 100%; }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+    <script>
+        // 1. Initialize the map centered on Coimbatore
+        // Coordinates: [Latitude, Longitude]
+        var map = L.map('map').setView([11.0168, 76.9558], 13);
+
+        // 2. Add the OpenStreetMap tiles (The visual map images)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // 3. Add the Routing Control
+        // By default, this uses the OSRM public demo server (Free!)
+        var control = L.Routing.control({
+            waypoints: [
+                L.latLng(11.0168, 76.9558), // Start: Center of Coimbatore (Gandhipuram area)
+                L.latLng(11.0014, 76.9628)  // End: Railway Station area
+            ],
+            routeWhileDragging: true, // Recalculate route if you drag the blue line
+            geocoder: L.Control.Geocoder // Optional: Would add a search box (requires another plugin)
+        }).addTo(map);
+
+        // 4. Handle clicks to set new waypoints
+        // This lets you click anywhere on the map to change the route
+        map.on('click', function(e) {
+            var container = L.DomUtil.create('div'),
+                startBtn = createButton('Start Here', container),
+                destBtn = createButton('End Here', container);
+
+            L.popup()
+                .setContent(container)
+                .setLatLng(e.latlng)
+                .openOn(map);
+
+            L.DomEvent.on(startBtn, 'click', function() {
+                control.spliceWaypoints(0, 1, e.latlng);
+                map.closePopup();
+            });
+
+            L.DomEvent.on(destBtn, 'click', function() {
+                control.spliceWaypoints(control.getWaypoints().length - 1, 1, e.latlng);
+                map.closePopup();
+            });
+        });
+
+        function createButton(label, container) {
+            var btn = L.DomUtil.create('button', '', container);
+            btn.setAttribute('type', 'button');
+            btn.innerHTML = label;
+            return btn;
+        }
+
+    </script>
+</body>
+</html>
