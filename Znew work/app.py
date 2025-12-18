@@ -6,6 +6,10 @@ app = FastAPI()
 
 model = joblib.load('model/greenroute_model.pkl')
 
+@app.get("/")
+def home():
+    return {"message": "GreenRoute CO2 Prediction API is running"}
+
 @app.post("/predict")
 def predict_co2(data: dict):
     vehicle_weight_map = {'car': 1500, 'bike': 150}
