@@ -13,27 +13,36 @@ st.sidebar.header("Route Details")
 distance = st.sidebar.number_input("Distance (km)", 1.0, 100.0, 10.0)
 speed = st.sidebar.number_input("Average Speed (km/h)", 10.0, 120.0, 40.0)
 
-vehicle = st.sidebar.selectbox("Vehicle Type", ["Car", "Bike"])
-traffic = st.sidebar.selectbox("Traffic Level", ["Low", "Medium", "High"])
+vehicle = st.sidebar.selectbox("Vehicle Type", ["car", "bike"])
+traffic = st.sidebar.selectbox("Traffic Level", ["low", "medium", "high"])
 
-vehicle_map = {"Car": 0, "Bike": 1}
-traffic_map = {"Low": 0, "Medium": 1, "High": 2}
+vehicle_map = {"Car": 1500, "Bike": 150}
+traffic_map = {"Low": 1.0, "Medium": 1.4, "High": 2.5}
 
 if st.button("🌱 Find Green Route"):
     payload = {
-        "distance_km": distance,
-        "avg_speed_kmph": speed,
-        "vehicle_type": vehicle_map[vehicle],
-        "traffic_level": traffic_map[traffic],
+        "routes":[
+        {
+            "distance": float(round(distance,2)),
+            "avg_speed": float(round(speed,2)),
+            "vehicle": str(vehicle),
+            "traffic": str(traffic)
+        }
+        ]
     }
 
     with st.spinner("Predicting CO₂ emission..."):
         response = requests.post(API_URL, json=payload)
+    
+    st.write("Sending payload:", payload)
 
     if response.status_code == 200:
         result = response.json()
         st.success(
-            f"✅ Predicted CO₂ Emission: **{result['predicted_co2_emission']} g**"
+            f"✅ Predicted CO₂ Emission: **{result['all_routes']} g**"
+            f"✅ Predicted CO₂ Emission: **{result['recommended_green_route']} g**"
+            
+
         )
     else:
         st.error("❌ Backend API error")
