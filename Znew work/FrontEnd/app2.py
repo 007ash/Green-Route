@@ -7,7 +7,7 @@ from streamlit_folium import st_folium
 # ---------------- CONFIG ----------------
 API_URL = "http://127.0.0.1:8000/predict"
 
-st.set_page_config(page_title="GreenRoute", layout="wide")
+st.set_page_config(page_title="GreenRoute", layout="wide",page_icon="🌿")
 st.title("GreenRoute – Carbon Optimized Travel Planner")
 st.write("Find the most **carbon-efficient route** between two locations.")
 
@@ -17,10 +17,10 @@ if "result" not in st.session_state:
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    source = st.text_input("Source", placeholder="e.g., Chennai Central")
+    source = st.text_input("Source", placeholder="e.g., Chennai")
 
 with col2:
-    destination = st.text_input("Destination", placeholder="e.g., Guindy")
+    destination = st.text_input("Destination", placeholder="e.g., Coimbatore")
 
 with col3:
     vehicle = st.selectbox("Vehicle Type", ["car", "bike"])
