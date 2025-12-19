@@ -7,25 +7,23 @@ from streamlit_folium import st_folium
 # ---------------- CONFIG ----------------
 API_URL = "http://127.0.0.1:8000/predict"
 
-st.set_page_config(page_title="GreenRoute 🌱", layout="wide")
-st.title("🌍 GreenRoute – Carbon Optimized Travel Planner")
+st.set_page_config(page_title="GreenRoute", layout="wide")
+st.title("GreenRoute – Carbon Optimized Travel Planner")
 st.write("Find the most **carbon-efficient route** between two locations.")
 
-# ---------------- SESSION STATE ----------------
 if "result" not in st.session_state:
     st.session_state.result = None
 
-# ---------------- USER INPUT ----------------
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    source = st.text_input("📍 Source", placeholder="e.g., Chennai Central")
+    source = st.text_input("Source", placeholder="e.g., Chennai Central")
 
 with col2:
-    destination = st.text_input("🏁 Destination", placeholder="e.g., Guindy")
+    destination = st.text_input("Destination", placeholder="e.g., Guindy")
 
 with col3:
-    vehicle = st.selectbox("🚗 Vehicle Type", ["car", "bike"])
+    vehicle = st.selectbox("Vehicle Type", ["car", "bike"])
 
 # ---------------- HELPERS ----------------
 def get_coordinates(place):
@@ -44,11 +42,11 @@ def traffic_level(speed):
         return "high"
 
 # ---------------- BUTTON ACTION ----------------
-if st.button("🌱 Find Green Route"):
+if st.button("Find Green Route"):
     if not source or not destination:
         st.warning("Please enter both source and destination.")
     else:
-        with st.spinner("Calculating green route..."):
+        with st.spinner("Calculating green route...."):
             # 1️⃣ Geocode
             src_lat, src_lon = get_coordinates(source)
             dst_lat, dst_lon = get_coordinates(destination)
@@ -160,4 +158,3 @@ if st.session_state.result is not None:
     # 🔁 Reset Button
     if st.button("🔄 Reset"):
         st.session_state.result = None
-        st.experimental_rerun()
