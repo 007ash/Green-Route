@@ -18,14 +18,13 @@ This project is a web application designed to help users find the most carbon-ef
 - Scikit-learn for machine learning
 - Pandas for data manipulation
 - Joblib for model serialization
-- API integration for featching predictive data
+- API integration for fetching predictive data
 - Geopy for geocoding
-- HTML/CSS for custom styling
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/GreenRoute.git
+   git clone https://github.com/007ash/GreenRoute.git
    cd GreenRoute
    ```
 
