@@ -1,12 +1,16 @@
 # Green-Route
 GreenRoute – Carbon Optimized Travel Planner
 
+# Problem Statement
+Traditional route planner optimize for shortest distance or time, not carbon emissions. The project aims to predict C02 emissions for different routes and recommend the most eco-friendly route. 
+# Overview
 This project is a web application designed to help users find the most carbon-efficient travel routes. It uses machine learning to predict CO₂ emissions based on various factors such as distance, vehicle type, speed, traffic conditions, weather, and temperature.
 
 ## Features
 - Predicts CO₂ emissions for different travel routes.
 - Provides a user-friendly interface for inputting travel parameters.
 - Displays detailed route information and model input data.
+- Recommends the most eco-friendly route based on predicted emissions in the map.
 
 ## Technologies Used
 - Python
@@ -14,7 +18,8 @@ This project is a web application designed to help users find the most carbon-ef
 - Scikit-learn for machine learning
 - Pandas for data manipulation
 - Joblib for model serialization
-- Pickle for data serialization
+- API integration for featching predictive data
+- Geopy for geocoding
 - HTML/CSS for custom styling
 
 ## Installation
@@ -28,11 +33,8 @@ This project is a web application designed to help users find the most carbon-ef
 pip install -r requirements.txt
 ```
 
-```bash
-streamlit run app.py
-```
-
-```bashstreamlit run app.py
+```bash 
+GreenRoute/FrontEnd> streamlit run app2.py
 ```
 
 ## Usage
