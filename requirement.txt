@@ -1,0 +1,28 @@
+"requirements"
+
+# Dependencies for frontend
+streamlit==1.22.0
+streamlit-folium==0.10.1
+
+# For API integration
+FastAPI==0.100.0
+uvicorn==0.22.0
+requests==2.31.0
+
+# For data serialization
+joblib==1.4.1
+
+# For environment management
+python-dotenv==1.0.0
+
+# For Machine Learning Model
+xgboost==1.7.6
+pandas==2.14.0
+scikit-learn==1.4.2
+
+# For Mapping and route plotting
+folium==0.14.0
+geopy==2.3.0
+geocoders==0.4.2
+
+
