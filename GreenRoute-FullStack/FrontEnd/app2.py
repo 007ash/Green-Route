@@ -4,8 +4,7 @@ from geopy.geocoders import Nominatim
 import folium
 from streamlit_folium import st_folium
 
-# ---------------- CONFIG ----------------
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = " " #Your API url here
 
 st.set_page_config(page_title="GreenRoute", layout="wide",page_icon="🌿")
 st.title("GreenRoute – Carbon Optimized Travel Planner")
@@ -25,7 +24,7 @@ with col2:
 with col3:
     vehicle = st.selectbox("Vehicle Type", ["car", "bike"])
 
-# ---------------- HELPERS ----------------
+# convert place names to coordinates
 def get_coordinates(place):
     geolocator = Nominatim(user_agent="greenroute")
     location = geolocator.geocode(place)
@@ -33,6 +32,7 @@ def get_coordinates(place):
         raise ValueError(f"Location not found: {place}")
     return location.latitude, location.longitude
 
+# determine traffic level based on average speed
 def traffic_level(speed):
     if speed > 40:
         return "low"
@@ -41,17 +41,17 @@ def traffic_level(speed):
     else:
         return "high"
 
-# ---------------- BUTTON ACTION ----------------
+# Button to find green route
 if st.button("Find Green Route"):
     if not source or not destination:
         st.warning("Please enter both source and destination.")
     else:
         with st.spinner("Calculating green route...."):
-            # 1️⃣ Geocode
+            # Geocode
             src_lat, src_lon = get_coordinates(source)
             dst_lat, dst_lon = get_coordinates(destination)
 
-            # 2️⃣ OSRM Routing
+            # OSRM Routing
             osrm_url = (
                 f"http://router.project-osrm.org/route/v1/driving/"
                 f"{src_lon},{src_lat};{dst_lon},{dst_lat}"
@@ -63,7 +63,7 @@ if st.button("Find Green Route"):
 
             processed_routes = []
 
-            # 3️⃣ Feature extraction
+            # Feature extraction same as ml model
             for idx, r in enumerate(routes, start=1):
                 distance_km = r["distance"] / 1000
                 duration_hr = r["duration"] / 3600
@@ -79,7 +79,7 @@ if st.button("Find Green Route"):
                     "geometry": r["geometry"]
                 })
 
-            # 4️⃣ API Payload (MATCHES BACKEND)
+            # API Payload (Backend)
             payload = {
                 "routes": [
                     {
@@ -92,12 +92,11 @@ if st.button("Find Green Route"):
                 ]
             }
 
-            # 5️⃣ API Call
+            # API Call
             api_response = requests.post(API_URL, json=payload).json()
 
             best_route_id = api_response["recommended_green_route"]["route_id"]
 
-            # 6️⃣ Store in session_state
             st.session_state.result = {
                 "processed_routes": processed_routes,
                 "api_response": api_response,
@@ -105,7 +104,7 @@ if st.button("Find Green Route"):
                 "best_route_id": best_route_id
             }
 
-# ---------------- DISPLAY OUTPUT (PERSISTENT) ----------------
+# Display Results
 if st.session_state.result is not None:
     data = st.session_state.result
 
@@ -114,10 +113,10 @@ if st.session_state.result is not None:
     src_lat, src_lon = data["src_coords"]
     best_route_id = data["best_route_id"]
 
-    # 🗺️ Map
+    # folium Map
     m = folium.Map(location=[src_lat, src_lon], zoom_start=13)
 
-    # 🔵 All routes
+    # All routes
     for r in processed_routes:
         folium.GeoJson(
             r["geometry"],
@@ -128,7 +127,7 @@ if st.session_state.result is not None:
             }
         ).add_to(m)
 
-    # 🟢 Best route
+    # Best route
     best_route = next(
         r for r in processed_routes if r["route_id"] == best_route_id
     )
@@ -144,17 +143,17 @@ if st.session_state.result is not None:
     st.success("✅ Greenest route identified!")
     st_folium(m, width=900, height=550)
 
-    # 📊 CO₂ Summary
+    # CO₂ Summary
     st.subheader("📊 CO₂ Emissions Comparison")
 
     for r in api_response["all_routes"]:
-        tag = "🌱 RECOMMENDED" if r["route_id"] == best_route_id else ""
+        tag = " RECOMMENDED" if r["route_id"] == best_route_id else ""
         st.write(
             f"Route {r['route_id']} | "
             f"Distance: {r['distance']} km | "
             f"CO₂: {round(r['predicted_co2'], 2)} g {tag}"
         )
 
-    # 🔁 Reset Button
+    # Reset Button
     if st.button("🔄 Reset"):
         st.session_state.result = None
