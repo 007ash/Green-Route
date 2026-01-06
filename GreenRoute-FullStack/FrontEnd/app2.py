@@ -1,10 +1,11 @@
+import random
 import streamlit as st
 import requests
 from geopy.geocoders import Nominatim
 import folium
 from streamlit_folium import st_folium
 
-API_URL = " " #Your API url here
+API_URL = "http://127.0.0.1:8000/predict"
 
 st.set_page_config(page_title="GreenRoute", layout="wide",page_icon="🌿")
 st.title("GreenRoute – Carbon Optimized Travel Planner")

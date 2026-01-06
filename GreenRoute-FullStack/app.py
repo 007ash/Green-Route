@@ -7,7 +7,7 @@ import numpy as np
 app = FastAPI(title="GreenRoute API")
 
 # Load trained model
-model = joblib.load("model/greenroute_model.pkl")
+model = joblib.load("model\greenroute_model.pkl")
 
 class RouteInput(BaseModel):
     distance: float
