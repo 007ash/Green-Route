@@ -5,7 +5,7 @@ from geopy.geocoders import Nominatim
 import folium
 from streamlit_folium import st_folium
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "" #like http://127.0.1.0:8000/predict
 
 st.set_page_config(page_title="GreenRoute", layout="wide",page_icon="🌿")
 st.title("GreenRoute – Carbon Optimized Travel Planner")
